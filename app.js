@@ -13,7 +13,7 @@ const MongoStore = require('connect-mongo')(session);
 
 mongoose.Promise = Promise;
 mongoose
-	.connect('mongodb://bliss:bliss69@ds018238.mlab.com:18238/malditos-juveniles', { useMongoClient: true })
+	.connect(process.env.DB, { useMongoClient: true })
 	.then(() => {
 		console.log('Connected to Mongo!');
 	})

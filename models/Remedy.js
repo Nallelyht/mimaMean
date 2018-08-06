@@ -5,18 +5,27 @@ const remedySchema = new Schema(
 	{
 		idUser: {
 			type: Schema.Types.ObjectId,
-			ref: 'User'
+			ref: 'User',
+			required: true
 		},
-		title: String,
-		description: String,
+		title: {
+			type: String,
+			required: true
+		},
+		description: {
+			type: String,
+			required: true
+		},
 		ingredients: [
 			{
-				type: String
+				type: String,
+				required: true
 			}
 		],
 		comments: [
 			{
-				type: String
+				type: Schema.Types.ObjectId,
+				ref: 'Comment'
 			}
 		]
 	},
