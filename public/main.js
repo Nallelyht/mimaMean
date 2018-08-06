@@ -104,10 +104,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _new_remedy_new_remedy_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./new-remedy/new-remedy.component */ "./src/app/new-remedy/new-remedy.component.ts");
 /* harmony import */ var _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./navbar/navbar.component */ "./src/app/navbar/navbar.component.ts");
 /* harmony import */ var _services_auth_service__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./services/auth.service */ "./src/app/services/auth.service.ts");
-/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
-/* harmony import */ var _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/cdk/layout */ "./node_modules/@angular/cdk/esm5/layout.es5.js");
-/* harmony import */ var hammerjs__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! hammerjs */ "./node_modules/hammerjs/hammer.js");
-/* harmony import */ var hammerjs__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(hammerjs__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var _services_new_remedy_service__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./services/new-remedy.service */ "./src/app/services/new-remedy.service.ts");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @angular/cdk/layout */ "./node_modules/@angular/cdk/esm5/layout.es5.js");
+/* harmony import */ var hammerjs__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! hammerjs */ "./node_modules/hammerjs/hammer.js");
+/* harmony import */ var hammerjs__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(hammerjs__WEBPACK_IMPORTED_MODULE_16__);
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -128,6 +129,7 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 // servicios
+
 
 // material design
 
@@ -151,108 +153,109 @@ var AppModule = /** @class */ (function () {
                 _angular_http__WEBPACK_IMPORTED_MODULE_6__["HttpModule"],
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
                 _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_4__["BrowserAnimationsModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatGridListModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatCardModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatMenuModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatIconModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatButtonModule"],
-                _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_14__["LayoutModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatToolbarModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatSidenavModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatListModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatRadioModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatGridListModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatCardModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatMenuModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatIconModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatButtonModule"],
+                _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_15__["LayoutModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatToolbarModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatSidenavModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatListModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatRadioModule"],
                 _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"],
                 _angular_forms__WEBPACK_IMPORTED_MODULE_3__["ReactiveFormsModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatFormFieldModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatInputModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatAutocompleteModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatBadgeModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatBottomSheetModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatButtonToggleModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatCardModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatCheckboxModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatChipsModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatDatepickerModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatDialogModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatDividerModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatExpansionModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatGridListModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatInputModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatListModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatMenuModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatNativeDateModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatPaginatorModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatProgressBarModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatProgressSpinnerModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatRadioModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatRippleModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatSelectModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatSidenavModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatSliderModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatSlideToggleModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatSnackBarModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatSortModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatStepperModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatTableModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatTabsModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatToolbarModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatTooltipModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatTreeModule"]
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatFormFieldModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatInputModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatAutocompleteModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatBadgeModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatBottomSheetModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatButtonToggleModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatCardModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatCheckboxModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatChipsModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatDatepickerModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatDialogModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatDividerModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatExpansionModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatGridListModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatInputModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatListModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatMenuModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatNativeDateModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatPaginatorModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatProgressBarModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatProgressSpinnerModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatRadioModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatRippleModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatSelectModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatSidenavModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatSliderModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatSlideToggleModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatSnackBarModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatSortModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatStepperModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatTableModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatTabsModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatToolbarModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatTooltipModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatTreeModule"]
             ],
             exports: [
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatButtonModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatCardModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatCheckboxModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatIconModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatListModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatMenuModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatRadioModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatRippleModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatSelectModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatSidenavModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatSliderModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatSlideToggleModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatFormFieldModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatInputModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatAutocompleteModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatBadgeModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatBottomSheetModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatButtonToggleModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatCardModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatCheckboxModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatChipsModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatDatepickerModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatDialogModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatDividerModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatExpansionModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatGridListModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatInputModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatListModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatMenuModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatNativeDateModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatPaginatorModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatProgressBarModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatProgressSpinnerModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatRadioModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatRippleModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatSelectModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatSidenavModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatSliderModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatSlideToggleModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatSnackBarModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatSortModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatStepperModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatTableModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatTabsModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatToolbarModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatTooltipModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatTreeModule"]
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatButtonModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatCardModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatCheckboxModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatIconModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatListModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatMenuModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatRadioModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatRippleModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatSelectModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatSidenavModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatSliderModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatSlideToggleModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatFormFieldModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatInputModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatAutocompleteModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatBadgeModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatBottomSheetModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatButtonToggleModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatCardModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatCheckboxModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatChipsModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatDatepickerModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatDialogModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatDividerModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatExpansionModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatGridListModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatInputModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatListModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatMenuModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatNativeDateModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatPaginatorModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatProgressBarModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatProgressSpinnerModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatRadioModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatRippleModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatSelectModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatSidenavModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatSliderModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatSlideToggleModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatSnackBarModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatSortModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatStepperModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatTableModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatTabsModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatToolbarModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatTooltipModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatTreeModule"]
             ],
             entryComponents: [
                 _new_remedy_new_remedy_component__WEBPACK_IMPORTED_MODULE_10__["NewRemedyComponent"]
             ],
             providers: [
-                _services_auth_service__WEBPACK_IMPORTED_MODULE_12__["AuthService"]
+                _services_auth_service__WEBPACK_IMPORTED_MODULE_12__["AuthService"],
+                _services_new_remedy_service__WEBPACK_IMPORTED_MODULE_13__["NewRemedyService"]
             ],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_7__["AppComponent"]]
         })
@@ -327,7 +330,7 @@ module.exports = "<section *ngIf=\"isLogged\">\n\n  <form class=\"example-form\"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".example-form {\n  margin: 100px auto 0;\n  min-width: 150px;\n  max-width: 500px;\n  width: 100%; }\n\n.example-full-width {\n  width: 100%; }\n\nsection {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 85vh; }\n\nsection p > span {\n    color: #e76297;\n    cursor: pointer; }\n\nsection .input-error-message.ng-star-inserted {\n    margin-top: -3%;\n    color: red;\n    margin-bottom: 5%;\n    margin-left: 1%; }\n"
+module.exports = ".example-form {\n  margin: 100px auto 0;\n  min-width: 150px;\n  max-width: 500px;\n  width: 100%; }\n\n.example-full-width {\n  width: 100%; }\n\nsection {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 85vh;\n  max-width: 80%;\n  margin: auto; }\n\nsection p > span {\n    color: #e76297;\n    cursor: pointer; }\n\nsection .input-error-message.ng-star-inserted {\n    margin-top: -3%;\n    color: red;\n    margin-bottom: 5%;\n    margin-left: 1%; }\n"
 
 /***/ }),
 
@@ -519,7 +522,7 @@ var HomeComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "@import url('https://fonts.googleapis.com/css?family=Oregano');\n.oregano {\n\tfont-family: 'Oregano';\n}\n.mat-sidenav-container {\n\tbackground: #fff;\n}\nh1 {\n\tfont-size: 2em;\n\ttext-align: center;\n\tdisplay: inline;\n}\nimg {\n\tvertical-align: middle;\n\twidth: 100px;\n\tpadding-left: 2%;\n}\n.blank-grow {\n\tflex: 1 1 auto;\n\tdisplay: flex;\n\talign-items: center;\n\tjustify-content: center;\n\ttext-decoration: none;\n}\n.blank-grow:visited {\n\tcolor: #106969;\n}\n.mat-toolbar.mat-primary {\n\tbackground: #c1efdf;\n\tcolor: #106969;\n\theight: 80px;\n}\n.icon {\n\tdisplay: flex;\n\talign-items: center;\n\tjustify-content: center;\n}\n.icon .auth {\n\tpadding: 0 2%;\n}\nbutton.mat-button.mat-icon-button {\n\tright: 0;\n\tposition: absolute;\n}\nmat-sidenav.mat-drawer.mat-sidenav.ng-tns-c3-0.ng-trigger.ng-trigger-transform.mat-drawer-over.ng-star-inserted {\n\twidth: 30vw;\n}\na.mat-list-item {\n\tmargin-left: 9%;\n\tcolor: #106969;\n}\nspan.auth {\n\tcolor: #106969;\n\tfont-size: 1.2rem;\n}"
+module.exports = "@import url('https://fonts.googleapis.com/css?family=Oregano');\n.oregano {\n\tfont-family: 'Oregano';\n}\n.mat-sidenav-container {\n\tbackground: #fff;\n}\nh1 {\n\tfont-size: 2em;\n\ttext-align: center;\n\tdisplay: inline;\n}\nimg {\n\tvertical-align: middle;\n\twidth: 100px;\n\tpadding-left: 2%;\n}\n.blank-grow {\n\tflex: 1 1 auto;\n\tdisplay: flex;\n\talign-items: center;\n\tjustify-content: center;\n\ttext-decoration: none;\n}\n.blank-grow:visited {\n\tcolor: #106969;\n}\n.mat-toolbar.mat-primary {\n\tbackground: #c1efdf;\n\tcolor: #106969;\n\theight: 80px;\n}\n.icon {\n\tdisplay: flex;\n\talign-items: center;\n\tjustify-content: center;\n}\n.icon .auth {\n\tpadding: 0 2%;\n}\nbutton.mat-button.mat-icon-button {\n\tright: 0;\n\tposition: absolute;\n}\nmat-sidenav.mat-drawer.mat-sidenav.ng-tns-c3-0.ng-trigger.ng-trigger-transform.mat-drawer-over.ng-star-inserted {\n\twidth: 30vw;\n}\na.mat-list-item {\n\tmargin-left: 9%;\n\tcolor: #106969;\n}\nspan.auth {\n\tcolor: #106969;\n\tfont-size: 1.2rem;\n}\n\n"
 
 /***/ }),
 
@@ -579,7 +582,7 @@ var NavbarComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<section>\n  <form #newRemedyForm=\"ngForm\" (ngSubmit)=\"createRemedy(newRemedyForm)\" ngNativeValidate>\n    <div class=\"title_button\">\n      <button  mat-raised-button class=\"btn\">Crear</button>\n      <h1 class=\"mat-h1\">\n        Crear Remedio\n      </h1>\n    </div>\n    <mat-form-field color=\"accent\" appearance=\"outline\">\n      <mat-label>Titulo</mat-label>\n      <input matInput  [(ngModel)]=\"title\" type=\"text\"  name=\"title\" required>\n    </mat-form-field>\n    <mat-form-field color=\"accent\" appearance=\"outline\">\n      <mat-label>Ingredientes</mat-label>\n      <input matInput [(ngModel)]=\"ingredient\"  type=\"text\" name=\"ingredient\" required>\n      <button mat-button *ngIf=\"ingredient\" matSuffix mat-icon-button type=\"button\" aria-label=\"Clear\" (click)=\"value=''; addIngredient(ingredient, $event)\">\n        <mat-icon>add</mat-icon>\n      </button>\n    </mat-form-field>\n    <mat-form-field color=\"accent\" appearance=\"outline\">\n      <mat-label>Descripcion</mat-label>\n      <textarea matInput [(ngModel)]=\"description\" type=\"text\" required name=\"description\"></textarea>\n    </mat-form-field>\n  </form>\n</section>"
+module.exports = "<section>\n  <form #newRemedyForm=\"ngForm\" (ngSubmit)=\"createRemedy(newRemedyForm)\" ngNativeValidate>\n    <div class=\"title_button\">\n      <button  mat-raised-button class=\"btn\">Crear</button>\n      <h1 class=\"mat-h1\">\n        Crear Remedio\n      </h1>\n    </div>\n    <mat-form-field color=\"accent\" appearance=\"outline\">\n      <mat-label>Titulo</mat-label>\n      <input matInput  [(ngModel)]=\"title\" type=\"text\"  name=\"title\" #titleUser required>\n    </mat-form-field>\n    <mat-form-field color=\"accent\" appearance=\"outline\" style=\" width: 35%;\">\n      <mat-label>Ingredientes</mat-label>\n      <input matInput [(ngModel)]=\"ingredient\"  type=\"text\" name=\"ingredient\" #addIng=\"ngModel\" >\n      <button mat-button *ngIf=\"ingredient\" matSuffix mat-icon-button type=\"button\" aria-label=\"Add\" (click)=\"addIngredient(ingredient, $event); ingredient='';\">\n        <mat-icon>add</mat-icon>\n      </button>\n    </mat-form-field>\n    <div *ngIf=\"addIng.touched && ingredients.length == 0\" class=\"input-error-message\">\n        Debes agregar al menos un ingrediente\n    </div>\n    <div class=\"new_ingredients\">\n      <ul *ngFor=\"let item of ingredients; let i = index\">\n        <li>\n          <span #oneIngredient>{{item}}</span>\n          <button mat-button matSuffix mat-icon-button type=\"button\" (click)=\"removeIngredient(i, oneIngredient)\" >\n          <mat-icon>close</mat-icon>\n          </button></li>\n      </ul>\n    </div>\n    <mat-form-field color=\"accent\" appearance=\"outline\">\n      <mat-label>Descripcion</mat-label>\n      <textarea matInput [(ngModel)]=\"description\" type=\"text\" required name=\"description\"></textarea>\n    </mat-form-field>\n  </form>\n</section>"
 
 /***/ }),
 
@@ -590,7 +593,7 @@ module.exports = "<section>\n  <form #newRemedyForm=\"ngForm\" (ngSubmit)=\"crea
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "mat-form-field.mat-form-field {\n  color: #106969;\n  width: 95%;\n  padding-left: 2.5%; }\n\n.title_button {\n  display: flex;\n  flex-direction: row-reverse;\n  align-items: center;\n  margin: 3%; }\n\nbutton.btn.mat-raised-button {\n  align-self: baseline;\n  margin-left: 30%; }\n"
+module.exports = "mat-form-field.mat-form-field {\n  color: #106969;\n  width: 95%;\n  padding-left: 2.5%; }\n\n.title_button {\n  display: flex;\n  flex-direction: row-reverse;\n  align-items: center;\n  margin: 3%; }\n\nbutton.btn.mat-raised-button {\n  align-self: baseline;\n  margin-left: 30%; }\n\n.new_ingredients {\n  display: inline-block;\n  width: 57.5%; }\n\n.new_ingredients ul {\n    display: inline-block;\n    list-style: none; }\n\n.new_ingredients ul button.mat-button.mat-icon-button.ng-star-inserted {\n      width: 20px;\n      height: 20px;\n      line-height: 20px; }\n\n.new_ingredients ul mat-icon.mat-icon.material-icons {\n      font-size: 15px;\n      width: 20px;\n      height: 20px;\n      line-height: 20px; }\n\n.input-error-message.ng-star-inserted {\n  margin-top: -3%;\n  color: red;\n  margin-left: 2.5%; }\n"
 
 /***/ }),
 
@@ -621,6 +624,7 @@ var NewRemedyComponent = /** @class */ (function () {
     function NewRemedyComponent(bottomSheetRef) {
         this.bottomSheetRef = bottomSheetRef;
         this.ingredients = [];
+        this.newIngredient = {};
     }
     NewRemedyComponent.prototype.openLink = function (event) {
         this.bottomSheetRef.dismiss();
@@ -629,10 +633,23 @@ var NewRemedyComponent = /** @class */ (function () {
     NewRemedyComponent.prototype.ngOnInit = function () {
     };
     NewRemedyComponent.prototype.createRemedy = function (remedy) {
+        this.newIngredient.title = remedy.value.title;
+        this.newIngredient.description = remedy.value.description;
+        this.newIngredient.ingredients = this.ingredients;
+        console.log(this.newIngredient);
     };
     NewRemedyComponent.prototype.addIngredient = function (ingredient, e) {
         e.preventDefault();
         this.ingredients.push(ingredient);
+    };
+    NewRemedyComponent.prototype.removeIngredient = function (index) {
+        var confirmation = confirm('¿Quieres eliminar el ingrediente ' + this.ingredients[index] + '?');
+        if (confirmation) {
+            this.ingredients.splice(index, 1);
+        }
+        else {
+            return;
+        }
     };
     NewRemedyComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -785,6 +802,75 @@ var FirebaseService = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], FirebaseService);
     return FirebaseService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/services/new-remedy.service.ts":
+/*!************************************************!*\
+  !*** ./src/app/services/new-remedy.service.ts ***!
+  \************************************************/
+/*! exports provided: NewRemedyService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NewRemedyService", function() { return NewRemedyService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/http */ "./node_modules/@angular/http/fesm5/http.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var NewRemedyService = /** @class */ (function () {
+    function NewRemedyService(http) {
+        this.http = http;
+        this.url = '/api/remedies/';
+    }
+    // get all remedies
+    NewRemedyService.prototype.getAllremedies = function () {
+        return this.http.get(this.url).toPromise()
+            .then(function (res) { return res.json(); })
+            .catch(function (e) { return console.log(e); });
+    };
+    // get one remedy
+    NewRemedyService.prototype.getOneRemedy = function (id) {
+        return this.http.get(this.url + id)
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (res) { return res.json(); }));
+    };
+    // create one remedy
+    NewRemedyService.prototype.createRemedy = function (obj) {
+        return this.http.post(this.url, obj)
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (res) { return res.json(); }));
+    };
+    // edit one remedy
+    NewRemedyService.prototype.editOneRemedy = function (obj) {
+        return this.http.put(this.url + obj._id, obj)
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (res) { return res.json(); }));
+    };
+    // delete one remedy richard
+    NewRemedyService.prototype.deleteRemedy = function (id) {
+        return this.http.delete(this.url + id)
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (res) { return res.json(); }));
+    };
+    NewRemedyService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
+            providedIn: 'root'
+        }),
+        __metadata("design:paramtypes", [_angular_http__WEBPACK_IMPORTED_MODULE_1__["Http"]])
+    ], NewRemedyService);
+    return NewRemedyService;
 }());
 
 
