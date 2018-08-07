@@ -440,7 +440,7 @@ var AuthComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<section>\n    <form #newCommentForm=\"ngForm\" (ngSubmit)=\"addComment(newCommentForm)\">\n      <div class=\"title_button\">\n        <button  mat-raised-button class=\"btn\">Crear</button>\n        <h1 class=\"mat-h1\">\n          Nuevo Comentario\n        </h1>\n      </div>\n      <mat-form-field color=\"accent\" appearance=\"outline\">\n        <mat-label>Descripcion</mat-label>\n        <textarea matInput [(ngModel)]=\"description\" type=\"text\" required name=\"description\"></textarea>\n      </mat-form-field>\n    </form>\n  </section>"
+module.exports = "<section>\n    <form #newCommentForm=\"ngForm\" >\n      <div class=\"title_button\">\n        <button  mat-raised-button (click)=\"openLink()\" class=\"btn\">Crear</button>\n        <h1 class=\"mat-h1\">\n          Nuevo Comentario\n        </h1>\n      </div>\n      <mat-form-field color=\"accent\" appearance=\"outline\">\n        <mat-label>Descripcion</mat-label>\n        <textarea matInput [(ngModel)]=\"description\" type=\"text\" required name=\"description\"></textarea>\n      </mat-form-field>\n    </form>\n  </section>"
 
 /***/ }),
 
@@ -489,7 +489,8 @@ var CommentComponent = /** @class */ (function () {
     CommentComponent.prototype.ngOnInit = function () {
     };
     CommentComponent.prototype.addComment = function (newComment) {
-        this.bottomSheetRef.dismiss();
+        console.log(newComment);
+        this.bottomSheetRef.dismiss('newComment');
     };
     CommentComponent.prototype.openLink = function (event) {
         this.bottomSheetRef.dismiss();
@@ -518,7 +519,7 @@ var CommentComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".grid-container {\n\tmargin: 30px 20px 20px;\n}\n\n.dashboard-card {\n\tposition: absolute;\n\ttop: 15px;\n\tleft: 15px;\n\tright: 15px;\n\tbottom: 15px;\n}\n\nbutton.more-button.mat-icon-button {\n\tposition: absolute;\n\ttop: 11px;\n\tleft: 1px;\n}\n\n.dashboard-card-content {\n\ttext-align: center;\n}\n\nbutton.mat-fab.mat-accent {\n\tposition: fixed;\n\tright: 4%;\n\ttop: 2%;\n\tz-index: 2;\n}\n\nh3 {\n\tmargin: 0;\n}"
+module.exports = ".grid-container {\n\tmargin: 30px 20px 20px;\n}\n\n.dashboard-card {\n\tposition: absolute;\n\ttop: 15px;\n\tleft: 15px;\n\tright: 15px;\n\tbottom: 15px;\n}\n\nbutton.more-button.mat-icon-button {\n\tposition: absolute;\n\ttop: 11px;\n\tleft: 1px;\n}\n\n.dashboard-card-content {\n\ttext-align: center;\n}\n\nbutton.mat-fab.mat-accent {\n\tposition: fixed;\n\tright: 4%;\n\ttop: 2%;\n\tz-index: 2;\n}\n\nh3 {\n\tmargin: 0;\n}\n\na {\n\ttext-decoration: none;\n\tcolor: #106969;\n\tfont: 400 21px/21px Roboto,\"Helvetica Neue\",sans-serif;\n}"
 
 /***/ }),
 
@@ -821,7 +822,7 @@ var NewRemedyComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<section *ngIf=\"remedy\">\n  <mat-card class=\"example-card\">\n    <mat-card-header>\n      <h2 class=\"mat-h1\">{{remedy.title}}</h2>\n      <div mat-card-avatar class=\"example-header-image\"></div>\n      <mat-card-title> Hola {{user.username}}</mat-card-title>\n      <mat-card-subtitle>Autor: <small>{{remedy.idUser.username}}</small> </mat-card-subtitle>\n    </mat-card-header>\n<!--     <img mat-card-image src=\"https://material.angular.io/assets/img/examples/shiba2.jpg\" alt=\"Photo of a Shiba Inu\"> -->\n    <mat-card-content>\n      <ul  *ngFor=\"let ingredient of remedy.ingredients\">\n        <li>{{ingredient}}</li>\n      </ul>\n      <p>\n        {{remedy.description}}\n      </p>\n    </mat-card-content>\n    <mat-card-actions>\n      <button mat-button (click)=\"openBottomSheet()\">Comentar</button>\n      <button mat-icon-button (click)=\"addFav($event)\">\n          <mat-icon [ngStyle]=\"{'color': fav ? '#e96196' : 'gray'}\">favorite</mat-icon>\n        </button>\n    </mat-card-actions>\n  </mat-card>\n</section>\n"
+module.exports = "<section *ngIf=\"remedy\">\n  <mat-card class=\"example-card\">\n    <mat-card-header>\n      <h2 class=\"mat-h1\">{{remedy?.title}}</h2>\n      <div mat-card-avatar class=\"example-header-image\"></div>\n      <mat-card-title> Hola {{user?.username}}</mat-card-title>\n      <mat-card-subtitle>Autor: <small>{{remedy?.idUser.username}}</small> </mat-card-subtitle>\n    </mat-card-header>\n<!--     <img mat-card-image src=\"https://material.angular.io/assets/img/examples/shiba2.jpg\" alt=\"Photo of a Shiba Inu\"> -->\n    <mat-card-content>\n      <ul  *ngFor=\"let ingredient of remedy.ingredients\">\n        <li>{{ingredient}}</li>\n      </ul>\n      <p>\n        {{remedy?.description}}\n      </p>\n    </mat-card-content>\n    <mat-card-actions *ngIf=\"!show()\">\n      <button mat-button (click)=\"openBottomSheet()\">Comentar</button>\n      <button mat-icon-button (click)=\"addFav($event)\">\n          <mat-icon [ngStyle]=\"{'color': fav ? '#e96196' : 'gray'}\">favorite</mat-icon>\n        </button>\n    </mat-card-actions>\n  </mat-card>\n</section>\n"
 
 /***/ }),
 
@@ -851,6 +852,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _services_new_remedy_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../services/new-remedy.service */ "./src/app/services/new-remedy.service.ts");
 /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
 /* harmony import */ var _comment_comment_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../comment/comment.component */ "./src/app/comment/comment.component.ts");
+/* harmony import */ var _services_auth_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../services/auth.service */ "./src/app/services/auth.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -865,15 +867,17 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
+
 var RemedyDetailComponent = /** @class */ (function () {
-    function RemedyDetailComponent(router, route, remedyService, bottomSheet) {
+    /* comments = []; */
+    function RemedyDetailComponent(router, route, authService, remedyService, bottomSheet) {
         var _this = this;
         this.router = router;
         this.route = route;
+        this.authService = authService;
         this.remedyService = remedyService;
         this.bottomSheet = bottomSheet;
         this.fav = false;
-        this.comments = [];
         this.route.params.subscribe(function (params) {
             var idRemedy = _this.route.snapshot.params['id'];
             _this.remedyService.getOneRemedy(idRemedy).subscribe(function (oneRemedy) {
@@ -889,14 +893,16 @@ var RemedyDetailComponent = /** @class */ (function () {
     RemedyDetailComponent.prototype.ngOnInit = function () {
     };
     RemedyDetailComponent.prototype.openBottomSheet = function () {
-        var _this = this;
         var sheet = this.bottomSheet.open(_comment_comment_component__WEBPACK_IMPORTED_MODULE_4__["CommentComponent"]);
         sheet.backdropClick().subscribe(function () {
             console.log('dbclicked');
         });
         sheet.afterDismissed().subscribe(function (comment) {
-            _this.comments.push(comment);
+            console.log(comment);
         });
+    };
+    RemedyDetailComponent.prototype.show = function () {
+        return this.authService.show();
     };
     RemedyDetailComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -906,6 +912,7 @@ var RemedyDetailComponent = /** @class */ (function () {
         }),
         __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"],
             _angular_router__WEBPACK_IMPORTED_MODULE_1__["ActivatedRoute"],
+            _services_auth_service__WEBPACK_IMPORTED_MODULE_5__["AuthService"],
             _services_new_remedy_service__WEBPACK_IMPORTED_MODULE_2__["NewRemedyService"],
             _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatBottomSheet"]])
     ], RemedyDetailComponent);
