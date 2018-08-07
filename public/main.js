@@ -103,12 +103,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
 /* harmony import */ var _new_remedy_new_remedy_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./new-remedy/new-remedy.component */ "./src/app/new-remedy/new-remedy.component.ts");
 /* harmony import */ var _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./navbar/navbar.component */ "./src/app/navbar/navbar.component.ts");
-/* harmony import */ var _services_auth_service__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./services/auth.service */ "./src/app/services/auth.service.ts");
-/* harmony import */ var _services_new_remedy_service__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./services/new-remedy.service */ "./src/app/services/new-remedy.service.ts");
-/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
-/* harmony import */ var _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @angular/cdk/layout */ "./node_modules/@angular/cdk/esm5/layout.es5.js");
-/* harmony import */ var hammerjs__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! hammerjs */ "./node_modules/hammerjs/hammer.js");
-/* harmony import */ var hammerjs__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(hammerjs__WEBPACK_IMPORTED_MODULE_16__);
+/* harmony import */ var _comment_comment_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./comment/comment.component */ "./src/app/comment/comment.component.ts");
+/* harmony import */ var _services_auth_service__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./services/auth.service */ "./src/app/services/auth.service.ts");
+/* harmony import */ var _services_new_remedy_service__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./services/new-remedy.service */ "./src/app/services/new-remedy.service.ts");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @angular/cdk/layout */ "./node_modules/@angular/cdk/esm5/layout.es5.js");
+/* harmony import */ var hammerjs__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! hammerjs */ "./node_modules/hammerjs/hammer.js");
+/* harmony import */ var hammerjs__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(hammerjs__WEBPACK_IMPORTED_MODULE_17__);
+/* harmony import */ var _remedy_detail_remedy_detail_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./remedy-detail/remedy-detail.component */ "./src/app/remedy-detail/remedy-detail.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -128,10 +130,12 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
 // servicios
 
 
 // material design
+
 
 
 
@@ -145,7 +149,9 @@ var AppModule = /** @class */ (function () {
                 _auth_auth_component__WEBPACK_IMPORTED_MODULE_8__["AuthComponent"],
                 _home_home_component__WEBPACK_IMPORTED_MODULE_9__["HomeComponent"],
                 _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_11__["NavbarComponent"],
-                _new_remedy_new_remedy_component__WEBPACK_IMPORTED_MODULE_10__["NewRemedyComponent"]
+                _new_remedy_new_remedy_component__WEBPACK_IMPORTED_MODULE_10__["NewRemedyComponent"],
+                _remedy_detail_remedy_detail_component__WEBPACK_IMPORTED_MODULE_18__["RemedyDetailComponent"],
+                _comment_comment_component__WEBPACK_IMPORTED_MODULE_12__["CommentComponent"]
             ],
             imports: [
                 _app_routes__WEBPACK_IMPORTED_MODULE_2__["AppRoutesModule"],
@@ -153,109 +159,110 @@ var AppModule = /** @class */ (function () {
                 _angular_http__WEBPACK_IMPORTED_MODULE_6__["HttpModule"],
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
                 _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_4__["BrowserAnimationsModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatGridListModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatCardModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatMenuModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatIconModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatButtonModule"],
-                _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_15__["LayoutModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatToolbarModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatSidenavModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatListModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatRadioModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatGridListModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatCardModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatMenuModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatIconModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatButtonModule"],
+                _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_16__["LayoutModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatToolbarModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatSidenavModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatListModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatRadioModule"],
                 _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"],
                 _angular_forms__WEBPACK_IMPORTED_MODULE_3__["ReactiveFormsModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatFormFieldModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatInputModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatAutocompleteModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatBadgeModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatBottomSheetModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatButtonToggleModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatCardModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatCheckboxModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatChipsModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatDatepickerModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatDialogModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatDividerModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatExpansionModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatGridListModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatInputModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatListModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatMenuModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatNativeDateModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatPaginatorModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatProgressBarModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatProgressSpinnerModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatRadioModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatRippleModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatSelectModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatSidenavModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatSliderModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatSlideToggleModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatSnackBarModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatSortModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatStepperModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatTableModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatTabsModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatToolbarModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatTooltipModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatTreeModule"]
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatFormFieldModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatInputModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatAutocompleteModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatBadgeModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatBottomSheetModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatButtonToggleModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatCardModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatCheckboxModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatChipsModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatDatepickerModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatDialogModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatDividerModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatExpansionModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatGridListModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatInputModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatListModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatMenuModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatNativeDateModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatPaginatorModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatProgressBarModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatProgressSpinnerModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatRadioModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatRippleModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatSelectModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatSidenavModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatSliderModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatSlideToggleModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatSnackBarModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatSortModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatStepperModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatTableModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatTabsModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatToolbarModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatTooltipModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatTreeModule"]
             ],
             exports: [
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatButtonModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatCardModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatCheckboxModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatIconModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatListModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatMenuModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatRadioModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatRippleModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatSelectModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatSidenavModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatSliderModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatSlideToggleModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatFormFieldModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatInputModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatAutocompleteModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatBadgeModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatBottomSheetModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatButtonToggleModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatCardModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatCheckboxModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatChipsModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatDatepickerModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatDialogModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatDividerModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatExpansionModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatGridListModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatInputModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatListModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatMenuModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatNativeDateModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatPaginatorModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatProgressBarModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatProgressSpinnerModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatRadioModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatRippleModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatSelectModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatSidenavModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatSliderModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatSlideToggleModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatSnackBarModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatSortModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatStepperModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatTableModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatTabsModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatToolbarModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatTooltipModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatTreeModule"]
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatButtonModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatCardModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatCheckboxModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatIconModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatListModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatMenuModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatRadioModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatRippleModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatSelectModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatSidenavModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatSliderModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatSlideToggleModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatFormFieldModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatInputModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatAutocompleteModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatBadgeModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatBottomSheetModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatButtonToggleModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatCardModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatCheckboxModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatChipsModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatDatepickerModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatDialogModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatDividerModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatExpansionModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatGridListModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatInputModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatListModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatMenuModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatNativeDateModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatPaginatorModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatProgressBarModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatProgressSpinnerModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatRadioModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatRippleModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatSelectModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatSidenavModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatSliderModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatSlideToggleModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatSnackBarModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatSortModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatStepperModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatTableModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatTabsModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatToolbarModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatTooltipModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatTreeModule"]
             ],
             entryComponents: [
-                _new_remedy_new_remedy_component__WEBPACK_IMPORTED_MODULE_10__["NewRemedyComponent"]
+                _new_remedy_new_remedy_component__WEBPACK_IMPORTED_MODULE_10__["NewRemedyComponent"],
+                _comment_comment_component__WEBPACK_IMPORTED_MODULE_12__["CommentComponent"]
             ],
             providers: [
-                _services_auth_service__WEBPACK_IMPORTED_MODULE_12__["AuthService"],
-                _services_new_remedy_service__WEBPACK_IMPORTED_MODULE_13__["NewRemedyService"]
+                _services_auth_service__WEBPACK_IMPORTED_MODULE_13__["AuthService"],
+                _services_new_remedy_service__WEBPACK_IMPORTED_MODULE_14__["NewRemedyService"]
             ],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_7__["AppComponent"]]
         })
@@ -281,6 +288,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /* harmony import */ var _auth_auth_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./auth/auth.component */ "./src/app/auth/auth.component.ts");
 /* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
+/* harmony import */ var _remedy_detail_remedy_detail_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./remedy-detail/remedy-detail.component */ "./src/app/remedy-detail/remedy-detail.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -291,7 +299,9 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
 var routes = [
+    { path: 'remedyDetail/:id', component: _remedy_detail_remedy_detail_component__WEBPACK_IMPORTED_MODULE_4__["RemedyDetailComponent"] },
     { path: 'auth', component: _auth_auth_component__WEBPACK_IMPORTED_MODULE_2__["AuthComponent"] },
     { path: 'home', component: _home_home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"] },
     { path: '**', pathMatch: 'full', redirectTo: 'home' }
@@ -423,6 +433,84 @@ var AuthComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/comment/comment.component.html":
+/*!************************************************!*\
+  !*** ./src/app/comment/comment.component.html ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<section>\n    <form #newCommentForm=\"ngForm\" (ngSubmit)=\"addComment(newCommentForm)\">\n      <div class=\"title_button\">\n        <button  mat-raised-button class=\"btn\">Crear</button>\n        <h1 class=\"mat-h1\">\n          Nuevo Comentario\n        </h1>\n      </div>\n      <mat-form-field color=\"accent\" appearance=\"outline\">\n        <mat-label>Descripcion</mat-label>\n        <textarea matInput [(ngModel)]=\"description\" type=\"text\" required name=\"description\"></textarea>\n      </mat-form-field>\n    </form>\n  </section>"
+
+/***/ }),
+
+/***/ "./src/app/comment/comment.component.scss":
+/*!************************************************!*\
+  !*** ./src/app/comment/comment.component.scss ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "mat-form-field.mat-form-field {\n  color: #106969;\n  width: 95%;\n  padding-left: 2.5%; }\n\n.title_button {\n  display: flex;\n  flex-direction: row-reverse;\n  align-items: center;\n  margin: 3%; }\n\nbutton.btn.mat-raised-button {\n  align-self: baseline;\n  margin-left: 30%; }\n\n.new_ingredients {\n  display: inline-block;\n  width: 57.5%; }\n\n.new_ingredients ul {\n    display: inline-block;\n    list-style: none; }\n\n.new_ingredients ul button.mat-button.mat-icon-button.ng-star-inserted {\n      width: 20px;\n      height: 20px;\n      line-height: 20px; }\n\n.new_ingredients ul mat-icon.mat-icon.material-icons {\n      font-size: 15px;\n      width: 20px;\n      height: 20px;\n      line-height: 20px; }\n\n.input-error-message.ng-star-inserted {\n  margin-top: -3%;\n  color: red;\n  margin-left: 2.5%; }\n"
+
+/***/ }),
+
+/***/ "./src/app/comment/comment.component.ts":
+/*!**********************************************!*\
+  !*** ./src/app/comment/comment.component.ts ***!
+  \**********************************************/
+/*! exports provided: CommentComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CommentComponent", function() { return CommentComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __param = (undefined && undefined.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
+
+
+var CommentComponent = /** @class */ (function () {
+    function CommentComponent(data, bottomSheetRef) {
+        this.data = data;
+        this.bottomSheetRef = bottomSheetRef;
+    }
+    CommentComponent.prototype.ngOnInit = function () {
+    };
+    CommentComponent.prototype.addComment = function (newComment) {
+        this.bottomSheetRef.dismiss();
+    };
+    CommentComponent.prototype.openLink = function (event) {
+        this.bottomSheetRef.dismiss();
+        event.preventDefault();
+    };
+    CommentComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-comment',
+            template: __webpack_require__(/*! ./comment.component.html */ "./src/app/comment/comment.component.html"),
+            styles: [__webpack_require__(/*! ./comment.component.scss */ "./src/app/comment/comment.component.scss")]
+        }),
+        __param(0, Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Inject"])(_angular_material__WEBPACK_IMPORTED_MODULE_1__["MAT_BOTTOM_SHEET_DATA"])),
+        __metadata("design:paramtypes", [Object, _angular_material__WEBPACK_IMPORTED_MODULE_1__["MatBottomSheetRef"]])
+    ], CommentComponent);
+    return CommentComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/home/home.component.css":
 /*!*****************************************!*\
   !*** ./src/app/home/home.component.css ***!
@@ -430,7 +518,7 @@ var AuthComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".grid-container {\n\tmargin: 30px 20px 20px;\n}\n\n.dashboard-card {\n\tposition: absolute;\n\ttop: 15px;\n\tleft: 15px;\n\tright: 15px;\n\tbottom: 15px;\n}\n\nbutton.more-button.mat-icon-button {\n\tposition: absolute;\n\ttop: 11px;\n\tleft: 1px;\n}\n\n.dashboard-card-content {\n\ttext-align: center;\n}\n\nbutton.mat-fab.mat-accent {\n\tposition: fixed;\n\tright: 4%;\n\ttop: 2%;\n\tz-index: 2;\n}\n"
+module.exports = ".grid-container {\n\tmargin: 30px 20px 20px;\n}\n\n.dashboard-card {\n\tposition: absolute;\n\ttop: 15px;\n\tleft: 15px;\n\tright: 15px;\n\tbottom: 15px;\n}\n\nbutton.more-button.mat-icon-button {\n\tposition: absolute;\n\ttop: 11px;\n\tleft: 1px;\n}\n\n.dashboard-card-content {\n\ttext-align: center;\n}\n\nbutton.mat-fab.mat-accent {\n\tposition: fixed;\n\tright: 4%;\n\ttop: 2%;\n\tz-index: 2;\n}\n\nh3 {\n\tmargin: 0;\n}"
 
 /***/ }),
 
@@ -441,7 +529,7 @@ module.exports = ".grid-container {\n\tmargin: 30px 20px 20px;\n}\n\n.dashboard-
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<button  mat-fab (click)=\"openBottomSheet()\"><mat-icon>add</mat-icon></button>\n<div class=\"grid-container\">\n  <mat-grid-list cols=\"2\" rowHeight=\"350px\">\n    <mat-grid-tile *ngFor=\"let card of cards | async\" [colspan]=\"card.cols\" [rowspan]=\"card.rows\">\n      <mat-card class=\"dashboard-card\">\n        <mat-card-header>\n          <mat-card-title>\n            {{card.title}}\n            <button mat-icon-button class=\"more-button\" [matMenuTriggerFor]=\"menu\" aria-label=\"Toggle menu\">\n              <mat-icon>more_vert</mat-icon>\n            </button>\n            <mat-menu #menu=\"matMenu\" xPosition=\"before\">\n              <button mat-menu-item>Expand</button>\n              <button mat-menu-item>Remove</button>\n            </mat-menu>\n          </mat-card-title>\n        </mat-card-header>\n        <mat-card-content class=\"dashboard-card-content\">\n          <div>Card Content Here</div>\n        </mat-card-content>\n      </mat-card>\n    </mat-grid-tile>\n  </mat-grid-list>\n</div>"
+module.exports = "<button *ngIf=\"!show()\" mat-fab (click)=\"openBottomSheet()\"><mat-icon>add</mat-icon></button>\n<div class=\"grid-container\">\n  <mat-grid-list cols=\"2\" rowHeight=\"350px\">\n    <mat-grid-tile *ngFor=\"let remedy of remedies\" [colspan]=\"1\" [rowspan]=\"1\">\n      <mat-card class=\"dashboard-card\">\n        <mat-card-header>\n          <mat-card-title>\n            <a [routerLink]=\"['/remedyDetail']\" (click)=\"viewDetails(remedy._id)\">\n              <h3>{{remedy.title}}</h3>\n            </a> \n            <button mat-icon-button class=\"more-button\" [matMenuTriggerFor]=\"menu\" aria-label=\"Toggle menu\">\n              <mat-icon>more_vert</mat-icon>\n            </button>\n            <mat-menu #menu=\"matMenu\" xPosition=\"before\">\n              <button mat-menu-item>Comentar</button>\n            </mat-menu>\n          </mat-card-title>\n        </mat-card-header>\n        <mat-card-content class=\"dashboard-card-content\">\n          <mat-list *ngFor=\"let ingredient of remedy.ingredients\">\n            <mat-list-item>\n              <p mat-line>{{ingredient}}</p>\n            </mat-list-item>\n          </mat-list>\n          <div>{{remedy.description}}</div>\n        </mat-card-content>\n      </mat-card>\n    </mat-grid-tile>\n  </mat-grid-list>\n</div>"
 
 /***/ }),
 
@@ -456,10 +544,12 @@ module.exports = "<button  mat-fab (click)=\"openBottomSheet()\"><mat-icon>add</
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomeComponent", function() { return HomeComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
-/* harmony import */ var _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/cdk/layout */ "./node_modules/@angular/cdk/esm5/layout.es5.js");
-/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
-/* harmony import */ var _new_remedy_new_remedy_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../new-remedy/new-remedy.component */ "./src/app/new-remedy/new-remedy.component.ts");
+/* harmony import */ var _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/cdk/layout */ "./node_modules/@angular/cdk/esm5/layout.es5.js");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var _new_remedy_new_remedy_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../new-remedy/new-remedy.component */ "./src/app/new-remedy/new-remedy.component.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _services_auth_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../services/auth.service */ "./src/app/services/auth.service.ts");
+/* harmony import */ var _services_new_remedy_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../services/new-remedy.service */ "./src/app/services/new-remedy.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -474,31 +564,43 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
+
+
 var HomeComponent = /** @class */ (function () {
-    function HomeComponent(breakpointObserver, bottomSheet) {
+    function HomeComponent(breakpointObserver, bottomSheet, authService, router, remediesService) {
+        var _this = this;
         this.breakpointObserver = breakpointObserver;
         this.bottomSheet = bottomSheet;
-        /** Based on the screen size, switch from standard to one column per row */
-        this.cards = this.breakpointObserver.observe(_angular_cdk_layout__WEBPACK_IMPORTED_MODULE_2__["Breakpoints"].Handset).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["map"])(function (_a) {
-            var matches = _a.matches;
-            if (matches) {
-                return [
-                    { title: 'Card 1', cols: 1, rows: 1 },
-                    { title: 'Card 2', cols: 1, rows: 1 },
-                    { title: 'Card 3', cols: 1, rows: 1 },
-                    { title: 'Card 4', cols: 1, rows: 1 }
-                ];
-            }
-            return [
-                { title: 'Card 1', cols: 2, rows: 1 },
-                { title: 'Card 2', cols: 1, rows: 1 },
-                { title: 'Card 3', cols: 1, rows: 2 },
-                { title: 'Card 4', cols: 1, rows: 1 }
-            ];
-        }));
+        this.authService = authService;
+        this.router = router;
+        this.remediesService = remediesService;
+        this.user = false;
+        this.remediesService.getAllRemedies().subscribe(function (res) {
+            _this.remedies = res;
+        });
     }
+    HomeComponent.prototype.ngOnInit = function () {
+        if (sessionStorage.getItem('user')) {
+            this.user = true;
+        }
+    };
     HomeComponent.prototype.openBottomSheet = function () {
-        this.bottomSheet.open(_new_remedy_new_remedy_component__WEBPACK_IMPORTED_MODULE_4__["NewRemedyComponent"]);
+        var _this = this;
+        var sheet = this.bottomSheet.open(_new_remedy_new_remedy_component__WEBPACK_IMPORTED_MODULE_3__["NewRemedyComponent"]);
+        sheet.backdropClick().subscribe(function () {
+            console.log('dbclicked');
+        });
+        sheet.afterDismissed().subscribe(function (newRemedy) {
+            _this.remedies.push(newRemedy);
+        });
+    };
+    HomeComponent.prototype.show = function () {
+        return this.authService.show();
+    };
+    HomeComponent.prototype.viewDetails = function (idRemedy) {
+        this.router.navigate(['/remedyDetail/' + idRemedy], {
+            skipLocationChange: true
+        });
     };
     HomeComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -506,7 +608,11 @@ var HomeComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./home.component.html */ "./src/app/home/home.component.html"),
             styles: [__webpack_require__(/*! ./home.component.css */ "./src/app/home/home.component.css")]
         }),
-        __metadata("design:paramtypes", [_angular_cdk_layout__WEBPACK_IMPORTED_MODULE_2__["BreakpointObserver"], _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatBottomSheet"]])
+        __metadata("design:paramtypes", [_angular_cdk_layout__WEBPACK_IMPORTED_MODULE_1__["BreakpointObserver"],
+            _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatBottomSheet"],
+            _services_auth_service__WEBPACK_IMPORTED_MODULE_5__["AuthService"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"],
+            _services_new_remedy_service__WEBPACK_IMPORTED_MODULE_6__["NewRemedyService"]])
     ], HomeComponent);
     return HomeComponent;
 }());
@@ -533,7 +639,7 @@ module.exports = "@import url('https://fonts.googleapis.com/css?family=Oregano')
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-sidenav-container fullscreen>\n  <mat-sidenav #sidenav >\n    <mat-nav-list>\n        <button mat-button matSuffix mat-icon-button type=\"button\" aria-label=\"Clear\" (click)=\"sidenav.close()\">\n            <mat-icon>close</mat-icon>\n          </button>\n      <a mat-list-item [routerLink]=\"['auth']\" style=\"\n      margin-top: 30%;\" (click)=\"sidenav.close()\">\n        <span class=\"auth\">Crear Cuenta</span>\n      </a>\n    </mat-nav-list>\n  </mat-sidenav>\n  <mat-toolbar color=\"primary\">\n    <button mat-icon-button (click)=\"sidenav.open()\" fxHide=\"false\" fxHide.gt-sm>\n      <mat-icon>menu</mat-icon>\n    </button>\n    <a [routerLink]=\"['home']\" class=\"blank-grow\">\n      <h1 class=\"oregano title\"> Me Dijo Mi Má</h1>\n      <img src=\"../../assets/img/flor.png\" alt=\"flor\">\n    </a>\n<!--     <span class=\"icon\">\n      <a [routerLink]=\"['auth']\"> Cuenta </a>\n    </span> -->\n  </mat-toolbar>\n  <router-outlet></router-outlet>\n</mat-sidenav-container>"
+module.exports = "<mat-sidenav-container fullscreen>\n  <mat-sidenav #sidenav >\n    <mat-nav-list>\n        <button mat-button matSuffix mat-icon-button type=\"button\" aria-label=\"Clear\" (click)=\"sidenav.close()\">\n            <mat-icon>close</mat-icon>\n          </button>\n      <a mat-list-item [routerLink]=\"['auth']\" style=\"\n      margin-top: 30%;\" (click)=\"sidenav.close()\" *ngIf=\"show()\">\n        <span class=\"auth\">Crear Cuenta</span>\n      </a>\n      <a mat-list-item [routerLink]=\"['auth']\" (click)=\"sidenav.close()\" *ngIf=\"show()\">\n        <span class=\"auth\">Iniciar Sesión</span>\n      </a>\n      <a mat-list-item [routerLink]=\"['home']\" (click)=\"logout(); sidenav.close()\" style=\"margin-top: 30%;\">\n        <span class=\"auth\" *ngIf=\"!show()\">Cerrar Sesión</span>\n      </a>\n    </mat-nav-list>\n  </mat-sidenav>\n  <mat-toolbar color=\"primary\">\n    <button mat-icon-button (click)=\"sidenav.open()\" fxHide=\"false\" fxHide.gt-sm>\n      <mat-icon>menu</mat-icon>\n    </button>\n    <a [routerLink]=\"['home']\" class=\"blank-grow\">\n      <h1 class=\"oregano title\"> Me Dijo Mi Má</h1>\n      <img src=\"../../assets/img/flor.png\" alt=\"flor\">\n    </a>\n<!--     <span class=\"icon\">\n      <a [routerLink]=\"['auth']\"> Cuenta </a>\n    </span> -->\n  </mat-toolbar>\n  <router-outlet></router-outlet>\n</mat-sidenav-container>"
 
 /***/ }),
 
@@ -549,24 +655,52 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NavbarComponent", function() { return NavbarComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _services_auth_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../services/auth.service */ "./src/app/services/auth.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
 
 
 var NavbarComponent = /** @class */ (function () {
-    function NavbarComponent() {
+    function NavbarComponent(authService, router) {
+        this.authService = authService;
+        this.router = router;
+        this.user = false;
         this.mode = new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]('push');
+        if (sessionStorage.getItem('user') === null) {
+            this.user = true;
+        }
     }
+    NavbarComponent.prototype.ngOnInit = function () {
+        if (sessionStorage.getItem('user') === null) {
+            this.user = true;
+        }
+    };
+    NavbarComponent.prototype.logout = function () {
+        this.user = false;
+        this.authService.logout();
+        this.router.navigate(['home']);
+    };
+    NavbarComponent.prototype.show = function () {
+        return this.authService.show();
+    };
     NavbarComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-navbar',
             template: __webpack_require__(/*! ./navbar.component.html */ "./src/app/navbar/navbar.component.html"),
             styles: [__webpack_require__(/*! ./navbar.component.css */ "./src/app/navbar/navbar.component.css")]
-        })
+        }),
+        __metadata("design:paramtypes", [_services_auth_service__WEBPACK_IMPORTED_MODULE_3__["AuthService"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]])
     ], NavbarComponent);
     return NavbarComponent;
 }());
@@ -582,7 +716,7 @@ var NavbarComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<section>\n  <form #newRemedyForm=\"ngForm\" (ngSubmit)=\"createRemedy(newRemedyForm)\" ngNativeValidate>\n    <div class=\"title_button\">\n      <button  mat-raised-button class=\"btn\">Crear</button>\n      <h1 class=\"mat-h1\">\n        Crear Remedio\n      </h1>\n    </div>\n    <mat-form-field color=\"accent\" appearance=\"outline\">\n      <mat-label>Titulo</mat-label>\n      <input matInput  [(ngModel)]=\"title\" type=\"text\"  name=\"title\" #titleUser required>\n    </mat-form-field>\n    <mat-form-field color=\"accent\" appearance=\"outline\" style=\" width: 35%;\">\n      <mat-label>Ingredientes</mat-label>\n      <input matInput [(ngModel)]=\"ingredient\"  type=\"text\" name=\"ingredient\" #addIng=\"ngModel\" >\n      <button mat-button *ngIf=\"ingredient\" matSuffix mat-icon-button type=\"button\" aria-label=\"Add\" (click)=\"addIngredient(ingredient, $event); ingredient='';\">\n        <mat-icon>add</mat-icon>\n      </button>\n    </mat-form-field>\n    <div *ngIf=\"addIng.touched && ingredients.length == 0\" class=\"input-error-message\">\n        Debes agregar al menos un ingrediente\n    </div>\n    <div class=\"new_ingredients\">\n      <ul *ngFor=\"let item of ingredients; let i = index\">\n        <li>\n          <span #oneIngredient>{{item}}</span>\n          <button mat-button matSuffix mat-icon-button type=\"button\" (click)=\"removeIngredient(i, oneIngredient)\" >\n          <mat-icon>close</mat-icon>\n          </button></li>\n      </ul>\n    </div>\n    <mat-form-field color=\"accent\" appearance=\"outline\">\n      <mat-label>Descripcion</mat-label>\n      <textarea matInput [(ngModel)]=\"description\" type=\"text\" required name=\"description\"></textarea>\n    </mat-form-field>\n  </form>\n</section>"
+module.exports = "<section>\n  <form #newRemedyForm=\"ngForm\" (ngSubmit)=\"createRemedy(newRemedyForm)\" ngNativeValidate>\n    <div class=\"title_button\">\n      <button  mat-raised-button class=\"btn\">Crear</button>\n      <h1 class=\"mat-h1\">\n        Crear Remedio\n      </h1>\n    </div>\n    <mat-form-field color=\"accent\" appearance=\"outline\">\n      <mat-label>Titulo</mat-label>\n      <input matInput  [(ngModel)]=\"title\" type=\"text\"  name=\"title\" #titleUser required>\n    </mat-form-field>\n    <mat-form-field color=\"accent\" appearance=\"outline\" style=\" width: 35%;\">\n      <mat-label>Ingredientes</mat-label>\n      <input matInput [(ngModel)]=\"ingredient\"  type=\"text\" name=\"ingredient\" #addIng=\"ngModel\" >\n      <button mat-button *ngIf=\"ingredient\" matSuffix mat-icon-button type=\"button\" aria-label=\"Add\" (click)=\"addIngredient(ingredient, $event); ingredient='';\">\n        <mat-icon>add</mat-icon>\n      </button>\n    </mat-form-field>\n    <div *ngIf=\"addIng.touched && ingredients.length == 0\" class=\"input-error-message\">\n      Debes agregar al menos un ingrediente\n    </div>\n    <div class=\"new_ingredients\">\n      <ul *ngFor=\"let item of ingredients; let i = index\">\n        <li>\n          <span #oneIngredient>{{item}}</span>\n          <button mat-button matSuffix mat-icon-button type=\"button\" (click)=\"removeIngredient(i, oneIngredient)\" >\n            <mat-icon>close</mat-icon>\n          </button></li>\n      </ul>\n    </div>\n    <mat-form-field color=\"accent\" appearance=\"outline\">\n      <mat-label>Descripcion</mat-label>\n      <textarea matInput [(ngModel)]=\"description\" type=\"text\" required name=\"description\"></textarea>\n    </mat-form-field>\n  </form>\n</section>"
 
 /***/ }),
 
@@ -609,6 +743,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NewRemedyComponent", function() { return NewRemedyComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var _services_new_remedy_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../services/new-remedy.service */ "./src/app/services/new-remedy.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -618,11 +753,17 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+var __param = (undefined && undefined.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
+
 
 
 var NewRemedyComponent = /** @class */ (function () {
-    function NewRemedyComponent(bottomSheetRef) {
+    function NewRemedyComponent(data, bottomSheetRef, remedyService) {
+        this.data = data;
         this.bottomSheetRef = bottomSheetRef;
+        this.remedyService = remedyService;
         this.ingredients = [];
         this.newIngredient = {};
     }
@@ -633,10 +774,15 @@ var NewRemedyComponent = /** @class */ (function () {
     NewRemedyComponent.prototype.ngOnInit = function () {
     };
     NewRemedyComponent.prototype.createRemedy = function (remedy) {
+        var _this = this;
         this.newIngredient.title = remedy.value.title;
         this.newIngredient.description = remedy.value.description;
         this.newIngredient.ingredients = this.ingredients;
+        this.newIngredient.idUser = JSON.parse(sessionStorage.getItem('user')).id;
         console.log(this.newIngredient);
+        this.remedyService.createRemedy(this.newIngredient).subscribe(function (newRemedy) {
+            _this.bottomSheetRef.dismiss(newRemedy);
+        });
     };
     NewRemedyComponent.prototype.addIngredient = function (ingredient, e) {
         e.preventDefault();
@@ -657,9 +803,113 @@ var NewRemedyComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./new-remedy.component.html */ "./src/app/new-remedy/new-remedy.component.html"),
             styles: [__webpack_require__(/*! ./new-remedy.component.scss */ "./src/app/new-remedy/new-remedy.component.scss")]
         }),
-        __metadata("design:paramtypes", [_angular_material__WEBPACK_IMPORTED_MODULE_1__["MatBottomSheetRef"]])
+        __param(0, Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Inject"])(_angular_material__WEBPACK_IMPORTED_MODULE_1__["MAT_BOTTOM_SHEET_DATA"])),
+        __metadata("design:paramtypes", [Object, _angular_material__WEBPACK_IMPORTED_MODULE_1__["MatBottomSheetRef"],
+            _services_new_remedy_service__WEBPACK_IMPORTED_MODULE_2__["NewRemedyService"]])
     ], NewRemedyComponent);
     return NewRemedyComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/remedy-detail/remedy-detail.component.html":
+/*!************************************************************!*\
+  !*** ./src/app/remedy-detail/remedy-detail.component.html ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<section *ngIf=\"remedy\">\n  <mat-card class=\"example-card\">\n    <mat-card-header>\n      <h2 class=\"mat-h1\">{{remedy.title}}</h2>\n      <div mat-card-avatar class=\"example-header-image\"></div>\n      <mat-card-title> Hola {{user.username}}</mat-card-title>\n      <mat-card-subtitle>Autor: <small>{{remedy.idUser.username}}</small> </mat-card-subtitle>\n    </mat-card-header>\n<!--     <img mat-card-image src=\"https://material.angular.io/assets/img/examples/shiba2.jpg\" alt=\"Photo of a Shiba Inu\"> -->\n    <mat-card-content>\n      <ul  *ngFor=\"let ingredient of remedy.ingredients\">\n        <li>{{ingredient}}</li>\n      </ul>\n      <p>\n        {{remedy.description}}\n      </p>\n    </mat-card-content>\n    <mat-card-actions>\n      <button mat-button (click)=\"openBottomSheet()\">Comentar</button>\n      <button mat-icon-button (click)=\"addFav($event)\">\n          <mat-icon [ngStyle]=\"{'color': fav ? '#e96196' : 'gray'}\">favorite</mat-icon>\n        </button>\n    </mat-card-actions>\n  </mat-card>\n</section>\n"
+
+/***/ }),
+
+/***/ "./src/app/remedy-detail/remedy-detail.component.scss":
+/*!************************************************************!*\
+  !*** ./src/app/remedy-detail/remedy-detail.component.scss ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".example-card {\n  max-width: 65%; }\n\n.example-header-image {\n  background-image: url(\"https://material.angular.io/assets/img/examples/shiba1.jpg\");\n  background-size: cover; }\n\nsection {\n  display: flex;\n  justify-content: center;\n  margin: 5%; }\n\nsection .mat-h1 {\n    margin: 0 20%; }\n\nsection mat-icon {\n    color: gray; }\n"
+
+/***/ }),
+
+/***/ "./src/app/remedy-detail/remedy-detail.component.ts":
+/*!**********************************************************!*\
+  !*** ./src/app/remedy-detail/remedy-detail.component.ts ***!
+  \**********************************************************/
+/*! exports provided: RemedyDetailComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RemedyDetailComponent", function() { return RemedyDetailComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _services_new_remedy_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../services/new-remedy.service */ "./src/app/services/new-remedy.service.ts");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var _comment_comment_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../comment/comment.component */ "./src/app/comment/comment.component.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+var RemedyDetailComponent = /** @class */ (function () {
+    function RemedyDetailComponent(router, route, remedyService, bottomSheet) {
+        var _this = this;
+        this.router = router;
+        this.route = route;
+        this.remedyService = remedyService;
+        this.bottomSheet = bottomSheet;
+        this.fav = false;
+        this.comments = [];
+        this.route.params.subscribe(function (params) {
+            var idRemedy = _this.route.snapshot.params['id'];
+            _this.remedyService.getOneRemedy(idRemedy).subscribe(function (oneRemedy) {
+                console.log(oneRemedy);
+                _this.remedy = oneRemedy;
+            });
+        });
+        this.user = JSON.parse(sessionStorage.getItem('user'));
+    }
+    RemedyDetailComponent.prototype.addFav = function () {
+        this.fav = !this.fav;
+    };
+    RemedyDetailComponent.prototype.ngOnInit = function () {
+    };
+    RemedyDetailComponent.prototype.openBottomSheet = function () {
+        var _this = this;
+        var sheet = this.bottomSheet.open(_comment_comment_component__WEBPACK_IMPORTED_MODULE_4__["CommentComponent"]);
+        sheet.backdropClick().subscribe(function () {
+            console.log('dbclicked');
+        });
+        sheet.afterDismissed().subscribe(function (comment) {
+            _this.comments.push(comment);
+        });
+    };
+    RemedyDetailComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-remedy-detail',
+            template: __webpack_require__(/*! ./remedy-detail.component.html */ "./src/app/remedy-detail/remedy-detail.component.html"),
+            styles: [__webpack_require__(/*! ./remedy-detail.component.scss */ "./src/app/remedy-detail/remedy-detail.component.scss")]
+        }),
+        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_1__["ActivatedRoute"],
+            _services_new_remedy_service__WEBPACK_IMPORTED_MODULE_2__["NewRemedyService"],
+            _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatBottomSheet"]])
+    ], RemedyDetailComponent);
+    return RemedyDetailComponent;
 }());
 
 
@@ -705,12 +955,19 @@ var AuthService = /** @class */ (function () {
         return this.http.post(this.url + 'login', auth, { withCredentials: true })
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (res) { return res.json(); }));
     };
-    AuthService.prototype.getPrivatePhones = function () {
-        return this.http.get(this.url + 'private', { withCredentials: true })
-            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (res) { return res.json(); }));
-    };
     AuthService.prototype.logout = function () {
-        localStorage.removeItem('user');
+        sessionStorage.removeItem('user');
+        return this.http.get(this.url + 'logout').toPromise()
+            .then(function (res) { return res.json(); })
+            .catch(function (e) { return console.log(e); });
+    };
+    AuthService.prototype.show = function () {
+        if (sessionStorage.getItem('user') === null) {
+            return true;
+        }
+        else {
+            return false;
+        }
     };
     AuthService = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
@@ -760,7 +1017,7 @@ var config = {
 firebase__WEBPACK_IMPORTED_MODULE_1__["initializeApp"](config);
 var FirebaseService = /** @class */ (function () {
     function FirebaseService() {
-        this.url = 'http://localhost:3000/';
+        this.url = '/';
         this.provider = new firebase__WEBPACK_IMPORTED_MODULE_1__["auth"].FacebookAuthProvider();
         this.googleProvider = new firebase__WEBPACK_IMPORTED_MODULE_1__["auth"].GoogleAuthProvider();
     }
@@ -836,13 +1093,12 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var NewRemedyService = /** @class */ (function () {
     function NewRemedyService(http) {
         this.http = http;
+        //  url = 'http://localhost:3000/api/remedies/';
         this.url = '/api/remedies/';
     }
     // get all remedies
-    NewRemedyService.prototype.getAllremedies = function () {
-        return this.http.get(this.url).toPromise()
-            .then(function (res) { return res.json(); })
-            .catch(function (e) { return console.log(e); });
+    NewRemedyService.prototype.getAllRemedies = function () {
+        return this.http.get(this.url).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (res) { return res.json(); }));
     };
     // get one remedy
     NewRemedyService.prototype.getOneRemedy = function (id) {
@@ -863,6 +1119,14 @@ var NewRemedyService = /** @class */ (function () {
     NewRemedyService.prototype.deleteRemedy = function (id) {
         return this.http.delete(this.url + id)
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (res) { return res.json(); }));
+    };
+    NewRemedyService.prototype.getNewRemedy = function () {
+        var remedy;
+        if (sessionStorage.getItem('newRemedy')) {
+            remedy = JSON.parse(sessionStorage.getItem('newRemedy'));
+            return remedy;
+        }
+        return;
     };
     NewRemedyService = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
