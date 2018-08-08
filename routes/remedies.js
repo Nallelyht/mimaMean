@@ -42,6 +42,7 @@ router.post(
 router.get('/:id', (req, res) => {
 	Remedy.findById(req.params.id)
 		.populate('idUser')
+		.populate('comments')
 		.then((remedy) => {
 			if (!remedy) return res.status(404);
 			return res.status(200).json(remedy);
