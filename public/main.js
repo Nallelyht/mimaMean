@@ -1288,10 +1288,10 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 var AuthService = /** @class */ (function () {
-    /*  url = '/api/'; */
     function AuthService(http) {
         this.http = http;
-        this.url = 'http://localhost:3000/api/';
+        /* url = 'http://localhost:3000/api/'; */
+        this.url = '/api/';
     }
     AuthService.prototype.signup = function (auth) {
         return this.http.post(this.url + 'signup', auth)
@@ -1354,10 +1354,10 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 var CommentsService = /** @class */ (function () {
-    /*   url = '/api/comments/'; */
     function CommentsService(http) {
         this.http = http;
-        this.url = 'http://localhost:3000/api/comments/';
+        /*   url = 'http://localhost:3000/api/comments/'; */
+        this.url = '/api/comments/';
     }
     // get all
     CommentsService.prototype.getAllComments = function () {
@@ -1490,10 +1490,10 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 var NewRemedyService = /** @class */ (function () {
-    /*  url = '/api/remedies/'; */
     function NewRemedyService(http) {
         this.http = http;
-        this.url = 'http://localhost:3000/api/remedies/';
+        /* url = 'http://localhost:3000/api/remedies/'; */
+        this.url = '/api/remedies/';
     }
     // get all remedies
     NewRemedyService.prototype.getAllRemedies = function () {
