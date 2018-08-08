@@ -111,6 +111,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var hammerjs__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! hammerjs */ "./node_modules/hammerjs/hammer.js");
 /* harmony import */ var hammerjs__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(hammerjs__WEBPACK_IMPORTED_MODULE_17__);
 /* harmony import */ var _remedy_detail_remedy_detail_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./remedy-detail/remedy-detail.component */ "./src/app/remedy-detail/remedy-detail.component.ts");
+/* harmony import */ var _footer_footer_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./footer/footer.component */ "./src/app/footer/footer.component.ts");
+/* harmony import */ var _auth_login_login_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./auth/login/login.component */ "./src/app/auth/login/login.component.ts");
+/* harmony import */ var _auth_signup_signup_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./auth/signup/signup.component */ "./src/app/auth/signup/signup.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -139,6 +142,9 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
+
+
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
@@ -151,7 +157,10 @@ var AppModule = /** @class */ (function () {
                 _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_11__["NavbarComponent"],
                 _new_remedy_new_remedy_component__WEBPACK_IMPORTED_MODULE_10__["NewRemedyComponent"],
                 _remedy_detail_remedy_detail_component__WEBPACK_IMPORTED_MODULE_18__["RemedyDetailComponent"],
-                _comment_comment_component__WEBPACK_IMPORTED_MODULE_12__["CommentComponent"]
+                _comment_comment_component__WEBPACK_IMPORTED_MODULE_12__["CommentComponent"],
+                _footer_footer_component__WEBPACK_IMPORTED_MODULE_19__["FooterComponent"],
+                _auth_login_login_component__WEBPACK_IMPORTED_MODULE_20__["LoginComponent"],
+                _auth_signup_signup_component__WEBPACK_IMPORTED_MODULE_21__["SignupComponent"]
             ],
             imports: [
                 _app_routes__WEBPACK_IMPORTED_MODULE_2__["AppRoutesModule"],
@@ -286,9 +295,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppRoutesModule", function() { return AppRoutesModule; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var _auth_auth_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./auth/auth.component */ "./src/app/auth/auth.component.ts");
-/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
-/* harmony import */ var _remedy_detail_remedy_detail_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./remedy-detail/remedy-detail.component */ "./src/app/remedy-detail/remedy-detail.component.ts");
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
+/* harmony import */ var _remedy_detail_remedy_detail_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./remedy-detail/remedy-detail.component */ "./src/app/remedy-detail/remedy-detail.component.ts");
+/* harmony import */ var _auth_login_login_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./auth/login/login.component */ "./src/app/auth/login/login.component.ts");
+/* harmony import */ var _auth_signup_signup_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./auth/signup/signup.component */ "./src/app/auth/signup/signup.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -300,10 +310,12 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
 var routes = [
-    { path: 'remedyDetail/:id', component: _remedy_detail_remedy_detail_component__WEBPACK_IMPORTED_MODULE_4__["RemedyDetailComponent"] },
-    { path: 'auth', component: _auth_auth_component__WEBPACK_IMPORTED_MODULE_2__["AuthComponent"] },
-    { path: 'home', component: _home_home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"] },
+    { path: 'remedyDetail/:id', component: _remedy_detail_remedy_detail_component__WEBPACK_IMPORTED_MODULE_3__["RemedyDetailComponent"] },
+    { path: 'login', component: _auth_login_login_component__WEBPACK_IMPORTED_MODULE_4__["LoginComponent"] },
+    { path: 'signup', component: _auth_signup_signup_component__WEBPACK_IMPORTED_MODULE_5__["SignupComponent"] },
+    { path: 'home', component: _home_home_component__WEBPACK_IMPORTED_MODULE_2__["HomeComponent"] },
     { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];
 var AppRoutesModule = /** @class */ (function () {
@@ -340,7 +352,7 @@ module.exports = "<section *ngIf=\"isLogged\">\n\n  <form class=\"example-form\"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".example-form {\n  margin: 100px auto 0;\n  min-width: 150px;\n  max-width: 500px;\n  width: 100%; }\n\n.example-full-width {\n  width: 100%; }\n\nsection {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 85vh;\n  max-width: 80%;\n  margin: auto; }\n\nsection p > span {\n    color: #e76297;\n    cursor: pointer; }\n\nsection .input-error-message.ng-star-inserted {\n    margin-top: -3%;\n    color: red;\n    margin-bottom: 5%;\n    margin-left: 1%; }\n"
+module.exports = ".example-form {\n  margin: 100px auto 0;\n  min-width: 150px;\n  max-width: 500px;\n  width: 100%;\n  padding-bottom: 2%; }\n\n.example-full-width {\n  width: 100%; }\n\nsection {\n  justify-content: center;\n  align-items: center;\n  height: 83.5vh;\n  max-width: 80%;\n  margin: auto; }\n\nsection p > span {\n    color: #e76297;\n    cursor: pointer; }\n\nsection .input-error-message.ng-star-inserted {\n    margin-top: -3%;\n    color: red;\n    margin-bottom: 5%;\n    margin-left: 1%; }\n"
 
 /***/ }),
 
@@ -433,6 +445,228 @@ var AuthComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/auth/login/login.component.html":
+/*!*************************************************!*\
+  !*** ./src/app/auth/login/login.component.html ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<section>\n\n  <form class=\"example-form\" #loginForm=\"ngForm\" (ngSubmit)=\"login(loginForm)\" ngNativeValidate>\n    <h1 class=\"mat-h1\">Iniciar Sesión</h1>\n    <mat-form-field class=\"example-full-width\" color=\"accent\" appearance=\"outline\">\n      <mat-label>Correo Electrónico</mat-label>\n      <input matInput [(ngModel)]=\"email\" type=\"email\" name=\"email\" required #emailUser=\"ngModel\" pattern=\"[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,3}$\" minlength=\"7\">\n    </mat-form-field>\n    <div *ngIf=\"emailUser.invalid && emailUser.touched\" class=\"input-error-message\" >\n      <div *ngIf=\"!passwordUser.dirty || passwordUser.touched\">\n        Ingresa tu correo\n      </div>\n      <div *ngIf=\"emailUser.errors.pattern\">\n        Debe ingresar un correo válido.\n      </div>\n    </div>\n\n    <mat-form-field class=\"example-full-width inputColor\" color=\"accent\" appearance=\"outline\">\n      <mat-label>Contraseña</mat-label>\n      <input matInput [(ngModel)]=\"password\"  type=\"password\" name=\"password\" required #passwordUser=\"ngModel\" min=\"1\">\n    </mat-form-field>\n    <div *ngIf=\"passwordUser.invalid && passwordUser.touched\" class=\"input-error-message\">\n      <div *ngIf=\"!passwordUser.dirty || passwordUser.touched\">\n        Ingresa tu contraseña\n      </div>\n    </div>\n    <button  mat-raised-button class=\"btn\" [disabled]=\"emailUser.errors ||passwordUser.errors\">Entrar</button>\n    <p>Ya tienes cuenta? <span [routerLink]=\"['/signup']\">Click aquí</span></p>\n  </form>\n</section>"
+
+/***/ }),
+
+/***/ "./src/app/auth/login/login.component.scss":
+/*!*************************************************!*\
+  !*** ./src/app/auth/login/login.component.scss ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".example-form {\n  margin: 100px auto 0;\n  min-width: 150px;\n  max-width: 500px;\n  width: 100%;\n  padding-bottom: 2%; }\n\n.example-full-width {\n  width: 100%; }\n\nsection {\n  justify-content: center;\n  align-items: center;\n  height: 83.5vh;\n  max-width: 80%;\n  margin: auto; }\n\nsection p > span {\n    color: #e76297;\n    cursor: pointer; }\n\nsection .input-error-message.ng-star-inserted {\n    margin-top: -3%;\n    color: red;\n    margin-bottom: 5%;\n    margin-left: 1%; }\n"
+
+/***/ }),
+
+/***/ "./src/app/auth/login/login.component.ts":
+/*!***********************************************!*\
+  !*** ./src/app/auth/login/login.component.ts ***!
+  \***********************************************/
+/*! exports provided: LoginComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginComponent", function() { return LoginComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _services_auth_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../services/auth.service */ "./src/app/services/auth.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _services_firebase_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../services/firebase.service */ "./src/app/services/firebase.service.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var LoginComponent = /** @class */ (function () {
+    function LoginComponent(authService, router, firebaseService) {
+        this.authService = authService;
+        this.router = router;
+        this.firebaseService = firebaseService;
+        this.isLogged = false;
+        this.errorMail = false;
+        this.user = null;
+        this.newUser = {};
+        if (sessionStorage.getItem('user')) {
+            this.router.navigate(['home']);
+        }
+    }
+    LoginComponent.prototype.signup = function (auth) {
+        var _this = this;
+        if (auth.value.password === auth.value.password2) {
+            this.newUser.username = auth.value.username;
+            this.newUser.password = auth.value.password;
+            this.newUser.email = auth.value.email;
+            this.authService.signup(this.newUser)
+                .subscribe(function (user) {
+                _this.user = user;
+                sessionStorage.setItem('user', JSON.stringify(user));
+                _this.router.navigate(['home']);
+            }, function (err) {
+                _this.errorMail = true;
+            });
+        }
+    };
+    LoginComponent.prototype.login = function (auth) {
+        var _this = this;
+        this.authService.login(auth.value)
+            .subscribe(function (user) {
+            _this.user = user;
+            sessionStorage.setItem('user', JSON.stringify(user));
+            _this.router.navigate(['home']);
+        });
+    };
+    LoginComponent.prototype.loginWithFacebook = function () {
+        this.firebaseService.loginWithFacebook();
+    };
+    LoginComponent.prototype.loginWithGoogle = function () {
+        this.firebaseService.loginWithGoogle();
+    };
+    LoginComponent.prototype.ngOnInit = function () { };
+    LoginComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-login',
+            template: __webpack_require__(/*! ./login.component.html */ "./src/app/auth/login/login.component.html"),
+            styles: [__webpack_require__(/*! ./login.component.scss */ "./src/app/auth/login/login.component.scss")]
+        }),
+        __metadata("design:paramtypes", [_services_auth_service__WEBPACK_IMPORTED_MODULE_1__["AuthService"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"],
+            _services_firebase_service__WEBPACK_IMPORTED_MODULE_3__["FirebaseService"]])
+    ], LoginComponent);
+    return LoginComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/auth/signup/signup.component.html":
+/*!***************************************************!*\
+  !*** ./src/app/auth/signup/signup.component.html ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<section>\n  <form class=\"example-form\" #signupForm=\"ngForm\" (ngSubmit)=\"signup(signupForm)\" ngNativeValidate>\n    <h1 class=\"mat-h1\">Crear Cuenta</h1>\n    <mat-form-field class=\"example-full-width\" color=\"accent\" appearance=\"outline\">\n      <mat-label>Nombre de Usuario</mat-label>\n      <input matInput  [(ngModel)]=\"username\" type=\"text\"  name=\"username\">\n    </mat-form-field>\n    <mat-form-field class=\"example-full-width\" color=\"accent\" appearance=\"outline\">\n      <mat-label>Correo Electrónico</mat-label>\n      <input matInput [(ngModel)]=\"email\" type=\"text\" name=\"email\">\n    </mat-form-field>\n    <div *ngIf=\"errorMail\" class=\"input-error-message\">\n      Este correo electrónico ya está registrado\n    </div>\n    <mat-form-field class=\"example-full-width\" color=\"accent\" appearance=\"outline\">\n      <mat-label>Contraseña</mat-label>\n      <input matInput [(ngModel)]=\"password\"  type=\"password\" name=\"password\">\n    </mat-form-field>\n    <mat-form-field class=\"example-full-width\" color=\"accent\" appearance=\"outline\">\n      <mat-label>Repite tu Contraseña</mat-label>\n      <input matInput [(ngModel)]=\"password2\"  type=\"password\" name=\"password2\">\n    </mat-form-field>\n    <button  mat-raised-button class=\"btn\">Crear</button>\n    <p>Ya tienes cuenta? <span [routerLink]=\"['/login']\" >Click aquí</span></p>\n  </form>\n</section>"
+
+/***/ }),
+
+/***/ "./src/app/auth/signup/signup.component.scss":
+/*!***************************************************!*\
+  !*** ./src/app/auth/signup/signup.component.scss ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".example-form {\n  margin: 100px auto 0;\n  min-width: 150px;\n  max-width: 500px;\n  width: 100%;\n  padding-bottom: 2%; }\n\n.example-full-width {\n  width: 100%; }\n\nsection {\n  justify-content: center;\n  align-items: center;\n  height: 83.5vh;\n  max-width: 80%;\n  margin: auto; }\n\nsection p > span {\n    color: #e76297;\n    cursor: pointer; }\n\nsection .input-error-message.ng-star-inserted {\n    margin-top: -3%;\n    color: red;\n    margin-bottom: 5%;\n    margin-left: 1%; }\n"
+
+/***/ }),
+
+/***/ "./src/app/auth/signup/signup.component.ts":
+/*!*************************************************!*\
+  !*** ./src/app/auth/signup/signup.component.ts ***!
+  \*************************************************/
+/*! exports provided: SignupComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SignupComponent", function() { return SignupComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _services_auth_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../services/auth.service */ "./src/app/services/auth.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _services_firebase_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../services/firebase.service */ "./src/app/services/firebase.service.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var SignupComponent = /** @class */ (function () {
+    function SignupComponent(authService, router, firebaseService) {
+        this.authService = authService;
+        this.router = router;
+        this.firebaseService = firebaseService;
+        this.isLogged = false;
+        this.errorMail = false;
+        this.user = null;
+        this.newUser = {};
+        if (sessionStorage.getItem('user')) {
+            this.router.navigate(['home']);
+        }
+    }
+    SignupComponent.prototype.signup = function (auth) {
+        var _this = this;
+        if (auth.value.password === auth.value.password2) {
+            this.newUser.username = auth.value.username;
+            this.newUser.password = auth.value.password;
+            this.newUser.email = auth.value.email;
+            this.authService.signup(this.newUser)
+                .subscribe(function (user) {
+                _this.user = user;
+                sessionStorage.setItem('user', JSON.stringify(user));
+                _this.router.navigate(['home']);
+            }, function (err) {
+                _this.errorMail = true;
+            });
+        }
+    };
+    SignupComponent.prototype.login = function (auth) {
+        var _this = this;
+        this.authService.login(auth.value)
+            .subscribe(function (user) {
+            _this.user = user;
+            sessionStorage.setItem('user', JSON.stringify(user));
+            _this.router.navigate(['home']);
+        });
+    };
+    SignupComponent.prototype.loginWithFacebook = function () {
+        this.firebaseService.loginWithFacebook();
+    };
+    SignupComponent.prototype.loginWithGoogle = function () {
+        this.firebaseService.loginWithGoogle();
+    };
+    SignupComponent.prototype.ngOnInit = function () { };
+    SignupComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-signup',
+            template: __webpack_require__(/*! ./signup.component.html */ "./src/app/auth/signup/signup.component.html"),
+            styles: [__webpack_require__(/*! ./signup.component.scss */ "./src/app/auth/signup/signup.component.scss")]
+        }),
+        __metadata("design:paramtypes", [_services_auth_service__WEBPACK_IMPORTED_MODULE_1__["AuthService"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"],
+            _services_firebase_service__WEBPACK_IMPORTED_MODULE_3__["FirebaseService"]])
+    ], SignupComponent);
+    return SignupComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/comment/comment.component.html":
 /*!************************************************!*\
   !*** ./src/app/comment/comment.component.html ***!
@@ -440,7 +674,7 @@ var AuthComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<section>\n    <form #newCommentForm=\"ngForm\" >\n      <div class=\"title_button\">\n        <button  mat-raised-button (click)=\"openLink()\" class=\"btn\">Crear</button>\n        <h1 class=\"mat-h1\">\n          Nuevo Comentario\n        </h1>\n      </div>\n      <mat-form-field color=\"accent\" appearance=\"outline\">\n        <mat-label>Descripcion</mat-label>\n        <textarea matInput [(ngModel)]=\"description\" type=\"text\" required name=\"description\"></textarea>\n      </mat-form-field>\n    </form>\n  </section>"
+module.exports = "<section>\n  <div>\n    <div class=\"title_button\">\n      <button  mat-raised-button class=\"btn\" (click)=\"addComment(body)\">Crear</button>\n      <h1 class=\"mat-h1\">\n        Nuevo Comentario\n      </h1>\n    </div>\n    <mat-form-field color=\"accent\" appearance=\"outline\">\n      <mat-label>Descripcion</mat-label>\n      <textarea matInput #body type=\"text\" required name=\"body\"></textarea>\n    </mat-form-field>\n  </div>\n  <h2 class=\"oregano\"> Atentamente {{user.username}}.</h2>\n</section>"
 
 /***/ }),
 
@@ -451,7 +685,7 @@ module.exports = "<section>\n    <form #newCommentForm=\"ngForm\" >\n      <div 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "mat-form-field.mat-form-field {\n  color: #106969;\n  width: 95%;\n  padding-left: 2.5%; }\n\n.title_button {\n  display: flex;\n  flex-direction: row-reverse;\n  align-items: center;\n  margin: 3%; }\n\nbutton.btn.mat-raised-button {\n  align-self: baseline;\n  margin-left: 30%; }\n\n.new_ingredients {\n  display: inline-block;\n  width: 57.5%; }\n\n.new_ingredients ul {\n    display: inline-block;\n    list-style: none; }\n\n.new_ingredients ul button.mat-button.mat-icon-button.ng-star-inserted {\n      width: 20px;\n      height: 20px;\n      line-height: 20px; }\n\n.new_ingredients ul mat-icon.mat-icon.material-icons {\n      font-size: 15px;\n      width: 20px;\n      height: 20px;\n      line-height: 20px; }\n\n.input-error-message.ng-star-inserted {\n  margin-top: -3%;\n  color: red;\n  margin-left: 2.5%; }\n"
+module.exports = "mat-form-field.mat-form-field {\n  color: #106969;\n  width: 95%;\n  padding-left: 2.5%; }\n\n.title_button {\n  display: flex;\n  flex-direction: row-reverse;\n  align-items: center;\n  margin: 3%; }\n\nbutton.btn.mat-raised-button {\n  align-self: baseline;\n  margin-left: 30%; }\n\n.new_ingredients {\n  display: inline-block;\n  width: 57.5%; }\n\n.new_ingredients ul {\n    display: inline-block;\n    list-style: none; }\n\n.new_ingredients ul button.mat-button.mat-icon-button.ng-star-inserted {\n      width: 20px;\n      height: 20px;\n      line-height: 20px; }\n\n.new_ingredients ul mat-icon.mat-icon.material-icons {\n      font-size: 15px;\n      width: 20px;\n      height: 20px;\n      line-height: 20px; }\n\n.input-error-message.ng-star-inserted {\n  margin-top: -3%;\n  color: red;\n  margin-left: 2.5%; }\n\nh2 {\n  text-align: right;\n  color: #106969; }\n\n.mat-bottom-sheet-container {\n  height: 45vh; }\n"
 
 /***/ }),
 
@@ -467,6 +701,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CommentComponent", function() { return CommentComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var _services_comments_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../services/comments.service */ "./src/app/services/comments.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -481,16 +716,27 @@ var __param = (undefined && undefined.__param) || function (paramIndex, decorato
 };
 
 
+
 var CommentComponent = /** @class */ (function () {
-    function CommentComponent(data, bottomSheetRef) {
+    function CommentComponent(data, bottomSheetRef, commentService) {
         this.data = data;
         this.bottomSheetRef = bottomSheetRef;
+        this.commentService = commentService;
+        this.newComment = {};
+        this.user = {};
+        this.user = JSON.parse(sessionStorage.getItem('user'));
     }
     CommentComponent.prototype.ngOnInit = function () {
     };
-    CommentComponent.prototype.addComment = function (newComment) {
-        console.log(newComment);
-        this.bottomSheetRef.dismiss('newComment');
+    CommentComponent.prototype.addComment = function (comment) {
+        var _this = this;
+        this.newComment.idUser = this.user.id;
+        this.newComment.idRemedy = this.data._id;
+        this.newComment.body = comment.value;
+        this.newComment.username = this.user.username;
+        this.commentService.createComment(this.newComment).subscribe(function (commentNew) {
+            _this.bottomSheetRef.dismiss(commentNew);
+        });
     };
     CommentComponent.prototype.openLink = function (event) {
         this.bottomSheetRef.dismiss();
@@ -503,9 +749,73 @@ var CommentComponent = /** @class */ (function () {
             styles: [__webpack_require__(/*! ./comment.component.scss */ "./src/app/comment/comment.component.scss")]
         }),
         __param(0, Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Inject"])(_angular_material__WEBPACK_IMPORTED_MODULE_1__["MAT_BOTTOM_SHEET_DATA"])),
-        __metadata("design:paramtypes", [Object, _angular_material__WEBPACK_IMPORTED_MODULE_1__["MatBottomSheetRef"]])
+        __metadata("design:paramtypes", [Object, _angular_material__WEBPACK_IMPORTED_MODULE_1__["MatBottomSheetRef"],
+            _services_comments_service__WEBPACK_IMPORTED_MODULE_2__["CommentsService"]])
     ], CommentComponent);
     return CommentComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/footer/footer.component.html":
+/*!**********************************************!*\
+  !*** ./src/app/footer/footer.component.html ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<footer>\n    <div class=\"copyright\">\n        <p class=\"text-center\">\n          Diseñado por \n          <a href=\"https://github.com/Nallelyht/\" target=\"_blank\">\n            @nallelyht\n          </a>\n        </p>\n      </div>\n</footer>"
+
+/***/ }),
+
+/***/ "./src/app/footer/footer.component.scss":
+/*!**********************************************!*\
+  !*** ./src/app/footer/footer.component.scss ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "footer {\n  padding-top: .5%;\n  position: relative;\n  max-width: 100%;\n  box-sizing: border-box; }\n\n.copyright {\n  box-sizing: border-box;\n  width: 100%;\n  position: absolute;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  background-color: #f5a5b8;\n  color: #106969;\n  font-family: 'Oregano';\n  text-align: center;\n  z-index: 2; }\n\n.copyright a {\n  color: #e96196; }\n"
+
+/***/ }),
+
+/***/ "./src/app/footer/footer.component.ts":
+/*!********************************************!*\
+  !*** ./src/app/footer/footer.component.ts ***!
+  \********************************************/
+/*! exports provided: FooterComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FooterComponent", function() { return FooterComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var FooterComponent = /** @class */ (function () {
+    function FooterComponent() {
+    }
+    FooterComponent.prototype.ngOnInit = function () {
+    };
+    FooterComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-footer',
+            template: __webpack_require__(/*! ./footer.component.html */ "./src/app/footer/footer.component.html"),
+            styles: [__webpack_require__(/*! ./footer.component.scss */ "./src/app/footer/footer.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], FooterComponent);
+    return FooterComponent;
 }());
 
 
@@ -519,7 +829,7 @@ var CommentComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".grid-container {\n\tmargin: 30px 20px 20px;\n}\n\n.dashboard-card {\n\tposition: absolute;\n\ttop: 15px;\n\tleft: 15px;\n\tright: 15px;\n\tbottom: 15px;\n}\n\nbutton.more-button.mat-icon-button {\n\tposition: absolute;\n\ttop: 11px;\n\tleft: 1px;\n}\n\n.dashboard-card-content {\n\ttext-align: center;\n}\n\nbutton.mat-fab.mat-accent {\n\tposition: fixed;\n\tright: 4%;\n\ttop: 2%;\n\tz-index: 2;\n}\n\nh3 {\n\tmargin: 0;\n}\n\na {\n\ttext-decoration: none;\n\tcolor: #106969;\n\tfont: 400 21px/21px Roboto,\"Helvetica Neue\",sans-serif;\n}"
+module.exports = ".grid-container {\n\tmargin: 30px 20px 10%;\n}\n\n.dashboard-card {\n\tposition: absolute;\n\ttop: 15px;\n\tleft: 15px;\n\tright: 15px;\n\tbottom: 15px;\n}\n\nbutton.more-button.mat-icon-button {\n\tposition: absolute;\n\ttop: 11px;\n\tleft: 1px;\n}\n\n.dashboard-card-content {\n\ttext-align: center;\n}\n\nbutton.mat-fab.mat-accent {\n\tposition: fixed;\n\tright: 4%;\n\ttop: 2%;\n\tz-index: 10;\n}\n\nh3 {\n\tmargin: 0;\n}\n\na {\n\ttext-decoration: none;\n\tcolor: #106969;\n\tfont: 400 21px/21px Roboto, \"Helvetica Neue\", sans-serif;\n}\n\n.header {\n\tdisplay: flex;\n\tjustify-content: center;\n\talign-items: center;\n\theight: 40vh;\n\tbackground: #c1efdf;\n}\n\na.mat-menu-item {\n\theight: auto;\n}\n"
 
 /***/ }),
 
@@ -530,7 +840,7 @@ module.exports = ".grid-container {\n\tmargin: 30px 20px 20px;\n}\n\n.dashboard-
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<button *ngIf=\"!show()\" mat-fab (click)=\"openBottomSheet()\"><mat-icon>add</mat-icon></button>\n<div class=\"grid-container\">\n  <mat-grid-list cols=\"2\" rowHeight=\"350px\">\n    <mat-grid-tile *ngFor=\"let remedy of remedies\" [colspan]=\"1\" [rowspan]=\"1\">\n      <mat-card class=\"dashboard-card\">\n        <mat-card-header>\n          <mat-card-title>\n            <a [routerLink]=\"['/remedyDetail']\" (click)=\"viewDetails(remedy._id)\">\n              <h3>{{remedy.title}}</h3>\n            </a> \n            <button mat-icon-button class=\"more-button\" [matMenuTriggerFor]=\"menu\" aria-label=\"Toggle menu\">\n              <mat-icon>more_vert</mat-icon>\n            </button>\n            <mat-menu #menu=\"matMenu\" xPosition=\"before\">\n              <button mat-menu-item>Comentar</button>\n            </mat-menu>\n          </mat-card-title>\n        </mat-card-header>\n        <mat-card-content class=\"dashboard-card-content\">\n          <mat-list *ngFor=\"let ingredient of remedy.ingredients\">\n            <mat-list-item>\n              <p mat-line>{{ingredient}}</p>\n            </mat-list-item>\n          </mat-list>\n          <div>{{remedy.description}}</div>\n        </mat-card-content>\n      </mat-card>\n    </mat-grid-tile>\n  </mat-grid-list>\n</div>"
+module.exports = "<button *ngIf=\"!show()\" mat-fab (click)=\"openBottomSheet()\"><mat-icon>add</mat-icon></button>\n<header class=\"header\">\n  <h1 class=\"montserrat\">REMEDIOS CASEROS</h1>\n</header>\n<div class=\"grid-container\">\n  <mat-grid-list cols=\"2\" rowHeight=\"450px\">\n    <mat-grid-tile *ngFor=\"let remedy of remedies\" [colspan]=\"1\" [rowspan]=\"1\">\n      <mat-card class=\"dashboard-card\">\n        <mat-card-header>\n          <mat-card-title>\n            <a [routerLink]=\"['/remedyDetail']\" (click)=\"viewDetails(remedy._id)\">\n              <h3>{{remedy.title}}</h3>\n            </a> \n            <button mat-icon-button class=\"more-button\" [matMenuTriggerFor]=\"menu\" aria-label=\"Toggle menu\" *ngIf=\"!show()\">\n              <mat-icon>more_vert</mat-icon>\n            </button>\n            <mat-menu #menu=\"matMenu\" xPosition=\"before\">\n              <a mat-menu-item [routerLink]=\"['/remedyDetail']\" (click)=\"viewDetails(remedy._id)\">Comentar</a>\n            </mat-menu>\n          </mat-card-title>\n        </mat-card-header>\n        <mat-card-content class=\"dashboard-card-content\">\n          <mat-list *ngFor=\"let ingredient of remedy.ingredients\">\n            <mat-list-item>\n              <p mat-line>{{ingredient}}</p>\n            </mat-list-item>\n          </mat-list>\n          <div>{{remedy.description}}</div>\n        </mat-card-content>\n      </mat-card>\n    </mat-grid-tile>\n  </mat-grid-list>\n</div>"
 
 /***/ }),
 
@@ -629,7 +939,7 @@ var HomeComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "@import url('https://fonts.googleapis.com/css?family=Oregano');\n.oregano {\n\tfont-family: 'Oregano';\n}\n.mat-sidenav-container {\n\tbackground: #fff;\n}\nh1 {\n\tfont-size: 2em;\n\ttext-align: center;\n\tdisplay: inline;\n}\nimg {\n\tvertical-align: middle;\n\twidth: 100px;\n\tpadding-left: 2%;\n}\n.blank-grow {\n\tflex: 1 1 auto;\n\tdisplay: flex;\n\talign-items: center;\n\tjustify-content: center;\n\ttext-decoration: none;\n}\n.blank-grow:visited {\n\tcolor: #106969;\n}\n.mat-toolbar.mat-primary {\n\tbackground: #c1efdf;\n\tcolor: #106969;\n\theight: 80px;\n}\n.icon {\n\tdisplay: flex;\n\talign-items: center;\n\tjustify-content: center;\n}\n.icon .auth {\n\tpadding: 0 2%;\n}\nbutton.mat-button.mat-icon-button {\n\tright: 0;\n\tposition: absolute;\n}\nmat-sidenav.mat-drawer.mat-sidenav.ng-tns-c3-0.ng-trigger.ng-trigger-transform.mat-drawer-over.ng-star-inserted {\n\twidth: 30vw;\n}\na.mat-list-item {\n\tmargin-left: 9%;\n\tcolor: #106969;\n}\nspan.auth {\n\tcolor: #106969;\n\tfont-size: 1.2rem;\n}\n\n"
+module.exports = "@import url('https://fonts.googleapis.com/css?family=Montserrat:300|Oregano');\n.oregano {\n\tfont-family: 'Oregano';\n}\n.mat-sidenav-container {\n\tbackground: #fff;\n}\nmat-toolbar{\n\tposition: fixed;\n\tz-index: 10;\n}\nh1 {\n\tfont-size: 2em;\n\ttext-align: center;\n\tdisplay: inline;\n}\nimg {\n\tvertical-align: middle;\n\twidth: 100px;\n\tpadding-left: 2%;\n}\n.blank-grow {\n\tflex: 1 1 auto;\n\tdisplay: flex;\n\talign-items: center;\n\tjustify-content: center;\n\ttext-decoration: none;\n}\n.blank-grow:visited {\n\tcolor: #106969;\n}\n.mat-toolbar.mat-primary {\n\tbackground: #c1efdf;\n\tcolor: #106969;\n\theight: 80px;\n}\n.icon {\n\tdisplay: flex;\n\talign-items: center;\n\tjustify-content: center;\n}\n.icon .auth {\n\tpadding: 0 2%;\n}\nbutton.mat-button.mat-icon-button {\n\tright: 0;\n\tposition: absolute;\n}\nmat-sidenav.mat-drawer.mat-sidenav.ng-tns-c3-0.ng-trigger.ng-trigger-transform.mat-drawer-over.ng-star-inserted {\n\twidth: 30vw;\n}\na.mat-list-item {\n\tmargin-left: 9%;\n\tcolor: #106969;\n}\nspan.auth {\n\tcolor: #106969;\n\tfont-size: 1.2rem;\n}\n\n"
 
 /***/ }),
 
@@ -640,7 +950,7 @@ module.exports = "@import url('https://fonts.googleapis.com/css?family=Oregano')
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-sidenav-container fullscreen>\n  <mat-sidenav #sidenav >\n    <mat-nav-list>\n        <button mat-button matSuffix mat-icon-button type=\"button\" aria-label=\"Clear\" (click)=\"sidenav.close()\">\n            <mat-icon>close</mat-icon>\n          </button>\n      <a mat-list-item [routerLink]=\"['auth']\" style=\"\n      margin-top: 30%;\" (click)=\"sidenav.close()\" *ngIf=\"show()\">\n        <span class=\"auth\">Crear Cuenta</span>\n      </a>\n      <a mat-list-item [routerLink]=\"['auth']\" (click)=\"sidenav.close()\" *ngIf=\"show()\">\n        <span class=\"auth\">Iniciar Sesión</span>\n      </a>\n      <a mat-list-item [routerLink]=\"['home']\" (click)=\"logout(); sidenav.close()\" style=\"margin-top: 30%;\">\n        <span class=\"auth\" *ngIf=\"!show()\">Cerrar Sesión</span>\n      </a>\n    </mat-nav-list>\n  </mat-sidenav>\n  <mat-toolbar color=\"primary\">\n    <button mat-icon-button (click)=\"sidenav.open()\" fxHide=\"false\" fxHide.gt-sm>\n      <mat-icon>menu</mat-icon>\n    </button>\n    <a [routerLink]=\"['home']\" class=\"blank-grow\">\n      <h1 class=\"oregano title\"> Me Dijo Mi Má</h1>\n      <img src=\"../../assets/img/flor.png\" alt=\"flor\">\n    </a>\n<!--     <span class=\"icon\">\n      <a [routerLink]=\"['auth']\"> Cuenta </a>\n    </span> -->\n  </mat-toolbar>\n  <router-outlet></router-outlet>\n</mat-sidenav-container>"
+module.exports = "<mat-sidenav-container fullscreen>\n  <mat-sidenav #sidenav >\n    <mat-nav-list>\n        <button mat-button matSuffix mat-icon-button type=\"button\" aria-label=\"Clear\" (click)=\"sidenav.close()\">\n            <mat-icon>close</mat-icon>\n          </button>\n      <a mat-list-item [routerLink]=\"['signup']\" style=\"\n      margin-top: 30%;\" (click)=\"sidenav.close()\" *ngIf=\"show()\">\n        <span class=\"auth\">Crear Cuenta</span>\n      </a>\n      <a mat-list-item [routerLink]=\"['login']\" (click)=\"sidenav.close()\" *ngIf=\"show()\">\n        <span class=\"auth\">Iniciar Sesión</span>\n      </a>\n      <a mat-list-item [routerLink]=\"['home']\" (click)=\"sidenav.close()\" style=\"margin-top: 30%;\">\n          <span class=\"auth\" *ngIf=\"!show()\">Inicio</span>\n        </a>\n      <a mat-list-item [routerLink]=\"['home']\" (click)=\"logout(); sidenav.close()\">\n        <span class=\"auth\" *ngIf=\"!show()\">Cerrar Sesión</span>\n      </a>\n    </mat-nav-list>\n  </mat-sidenav>\n  <mat-toolbar color=\"primary\">\n    <button mat-icon-button (click)=\"sidenav.open()\" fxHide=\"false\" fxHide.gt-sm>\n      <mat-icon>menu</mat-icon>\n    </button>\n    <a [routerLink]=\"['home']\" class=\"blank-grow\">\n      <h1 class=\"oregano title\"> Me Dijo Mi Má</h1>\n      <img src=\"../../assets/img/flor.png\" alt=\"flor\">\n    </a>\n<!--     <span class=\"icon\">\n      <a [routerLink]=\"['auth']\"> Cuenta </a>\n    </span> -->\n  </mat-toolbar>\n  <router-outlet></router-outlet>\n  <app-footer></app-footer>\n</mat-sidenav-container>\n"
 
 /***/ }),
 
@@ -717,7 +1027,7 @@ var NavbarComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<section>\n  <form #newRemedyForm=\"ngForm\" (ngSubmit)=\"createRemedy(newRemedyForm)\" ngNativeValidate>\n    <div class=\"title_button\">\n      <button  mat-raised-button class=\"btn\">Crear</button>\n      <h1 class=\"mat-h1\">\n        Crear Remedio\n      </h1>\n    </div>\n    <mat-form-field color=\"accent\" appearance=\"outline\">\n      <mat-label>Titulo</mat-label>\n      <input matInput  [(ngModel)]=\"title\" type=\"text\"  name=\"title\" #titleUser required>\n    </mat-form-field>\n    <mat-form-field color=\"accent\" appearance=\"outline\" style=\" width: 35%;\">\n      <mat-label>Ingredientes</mat-label>\n      <input matInput [(ngModel)]=\"ingredient\"  type=\"text\" name=\"ingredient\" #addIng=\"ngModel\" >\n      <button mat-button *ngIf=\"ingredient\" matSuffix mat-icon-button type=\"button\" aria-label=\"Add\" (click)=\"addIngredient(ingredient, $event); ingredient='';\">\n        <mat-icon>add</mat-icon>\n      </button>\n    </mat-form-field>\n    <div *ngIf=\"addIng.touched && ingredients.length == 0\" class=\"input-error-message\">\n      Debes agregar al menos un ingrediente\n    </div>\n    <div class=\"new_ingredients\">\n      <ul *ngFor=\"let item of ingredients; let i = index\">\n        <li>\n          <span #oneIngredient>{{item}}</span>\n          <button mat-button matSuffix mat-icon-button type=\"button\" (click)=\"removeIngredient(i, oneIngredient)\" >\n            <mat-icon>close</mat-icon>\n          </button></li>\n      </ul>\n    </div>\n    <mat-form-field color=\"accent\" appearance=\"outline\">\n      <mat-label>Descripcion</mat-label>\n      <textarea matInput [(ngModel)]=\"description\" type=\"text\" required name=\"description\"></textarea>\n    </mat-form-field>\n  </form>\n</section>"
+module.exports = "<section>\n  <form #newRemedyForm=\"ngForm\" (ngSubmit)=\"createRemedy(newRemedyForm)\" ngNativeValidate>\n    <div class=\"title_button\">\n      <button  mat-raised-button class=\"btn\">Crear</button>\n      <h1 class=\"mat-h1\">\n        Crear Remedio\n      </h1>\n    </div>\n    <mat-form-field color=\"accent\" appearance=\"outline\">\n      <mat-label>Titulo</mat-label>\n      <input matInput  [(ngModel)]=\"editable.title\" type=\"text\"  name=\"title\" #title required>\n    </mat-form-field>\n    <mat-form-field color=\"accent\" appearance=\"outline\" style=\" width: 35%;\">\n      <mat-label>Ingredientes</mat-label>\n      <input matInput [(ngModel)]=\"ingredient\"  type=\"text\" name=\"ingredient\" #addIng=\"ngModel\" >\n      <button mat-button *ngIf=\"ingredient\" matSuffix mat-icon-button type=\"button\" aria-label=\"Add\" (click)=\"addIngredient(ingredient, $event); ingredient='';\">\n        <mat-icon>add</mat-icon>\n      </button>\n    </mat-form-field>\n    <div *ngIf=\"addIng.touched && ingredients.length == 0\" class=\"input-error-message\">\n      Debes agregar al menos un ingrediente\n    </div>\n    <div class=\"new_ingredients\">\n      <ul *ngFor=\"let item of ingredients; let i = index\">\n        <li>\n          <span #oneIngredient>{{item}}</span>\n          <button mat-button matSuffix mat-icon-button type=\"button\" (click)=\"removeIngredient(i, oneIngredient)\" >\n            <mat-icon>close</mat-icon>\n          </button></li>\n      </ul>\n    </div>\n    <mat-form-field color=\"accent\" appearance=\"outline\">\n      <mat-label>Descripcion</mat-label>\n      <textarea matInput [(ngModel)]=\"editable.description\" type=\"text\" required name=\"description\"></textarea>\n    </mat-form-field>\n  </form>\n</section>"
 
 /***/ }),
 
@@ -767,6 +1077,11 @@ var NewRemedyComponent = /** @class */ (function () {
         this.remedyService = remedyService;
         this.ingredients = [];
         this.newIngredient = {};
+        this.editable = {};
+        if (this.data !== null) {
+            this.editable = this.data;
+            this.ingredients = this.data.ingredients;
+        }
     }
     NewRemedyComponent.prototype.openLink = function (event) {
         this.bottomSheetRef.dismiss();
@@ -780,10 +1095,17 @@ var NewRemedyComponent = /** @class */ (function () {
         this.newIngredient.description = remedy.value.description;
         this.newIngredient.ingredients = this.ingredients;
         this.newIngredient.idUser = JSON.parse(sessionStorage.getItem('user')).id;
-        console.log(this.newIngredient);
-        this.remedyService.createRemedy(this.newIngredient).subscribe(function (newRemedy) {
-            _this.bottomSheetRef.dismiss(newRemedy);
-        });
+        if (this.data === null) {
+            this.remedyService.createRemedy(this.newIngredient).subscribe(function (newRemedy) {
+                _this.bottomSheetRef.dismiss(newRemedy);
+            });
+        }
+        else if (this.data !== null) {
+            this.newIngredient._id = this.data._id;
+            this.remedyService.editOneRemedy(this.newIngredient).subscribe(function (editRemedy) {
+                _this.bottomSheetRef.dismiss();
+            });
+        }
     };
     NewRemedyComponent.prototype.addIngredient = function (ingredient, e) {
         e.preventDefault();
@@ -822,7 +1144,7 @@ var NewRemedyComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<section *ngIf=\"remedy\">\n  <mat-card class=\"example-card\">\n    <mat-card-header>\n      <h2 class=\"mat-h1\">{{remedy?.title}}</h2>\n      <div mat-card-avatar class=\"example-header-image\"></div>\n      <mat-card-title> Hola {{user?.username}}</mat-card-title>\n      <mat-card-subtitle>Autor: <small>{{remedy?.idUser.username}}</small> </mat-card-subtitle>\n    </mat-card-header>\n<!--     <img mat-card-image src=\"https://material.angular.io/assets/img/examples/shiba2.jpg\" alt=\"Photo of a Shiba Inu\"> -->\n    <mat-card-content>\n      <ul  *ngFor=\"let ingredient of remedy.ingredients\">\n        <li>{{ingredient}}</li>\n      </ul>\n      <p>\n        {{remedy?.description}}\n      </p>\n    </mat-card-content>\n    <mat-card-actions *ngIf=\"!show()\">\n      <button mat-button (click)=\"openBottomSheet()\">Comentar</button>\n      <button mat-icon-button (click)=\"addFav($event)\">\n          <mat-icon [ngStyle]=\"{'color': fav ? '#e96196' : 'gray'}\">favorite</mat-icon>\n        </button>\n    </mat-card-actions>\n  </mat-card>\n</section>\n"
+module.exports = "<section *ngIf=\"remedy\">\n  <mat-card class=\"example-card\">\n    <mat-card-header>\n      <h2 class=\"mat-h1\" *ngIf=\"remedy.title\">{{remedy.title}}</h2>\n      <div mat-card-avatar class=\"example-header-image\"></div>\n      <mat-card-title *ngIf=\"user\"> Hola {{user.username}}</mat-card-title>\n      <mat-card-subtitle>Autor: <small *ngIf=\"remedy.idUser\">{{remedy.idUser.username}}</small> </mat-card-subtitle>\n    </mat-card-header>\n<!--     <img mat-card-image src=\"https://material.angular.io/assets/img/examples/shiba2.jpg\" alt=\"Photo of a Shiba Inu\"> -->\n    <mat-card-content>\n      <h2 class=\"mat-h2\">Ingredientes</h2>\n      <ul  *ngFor=\"let ingredient of remedy.ingredients\">\n        <li>{{ingredient}}</li>\n      </ul>\n      <h2 class=\"mat-h2\">Receta</h2>\n      <p>\n        {{remedy?.description}}\n      </p>\n    </mat-card-content>\n    <mat-card-actions *ngIf=\"show()\">\n      <button mat-button [routerLink]=\"['/signup']\"> \n        <mat-icon>comment</mat-icon>\n      </button>\n    </mat-card-actions>\n    <mat-card-actions *ngIf=\"!show()\">\n      <button mat-button (click)=\"openBottomSheet()\"> \n        <mat-icon>comment</mat-icon>\n      </button>\n<!--       <button mat-icon-button (click)=\"addFav($event)\">\n        <mat-icon [ngStyle]=\"{'color': fav ? '#e96196' : 'gray'}\">favorite</mat-icon>\n      </button> -->\n      <button mat-button (click)=\"openEdit()\" *ngIf=\"remedy.idUser\">\n          <mat-icon *ngIf=\"user.id === remedy.idUser._id\">edit</mat-icon>\n      </button>\n    </mat-card-actions>\n    <mat-card-content *ngIf=\"remedy.comments\">\n      <h2 class=\"mat-h2\">Comentarios</h2>\n      <ul *ngFor=\"let comment of remedy.comments\" class=\"commentsList\" >\n        <li>\n          <p><strong>{{comment.username}}:</strong> {{comment.body}}\n          <br>\n          <small>{{comment.created_at| date: 'dd/MM/yyyy'}}</small>\n        </p>\n          \n        </li>\n      </ul>\n    </mat-card-content>\n    <mat-card-content *ngIf=\"!remedy.comments\">\n      <h2 class=\"mat-h2\">Comentarios</h2>\n      <ul  *ngFor=\"let comment of arrayComments\" class=\"commentsList\">\n        <li>\n          <p><strong>{{comment.username}}:</strong> {{comment.body}}\n          <br>\n          <small>{{comment.created_at| date: 'dd/MM/yyyy'}}</small>\n        </p>\n          \n        </li>\n      </ul>\n    </mat-card-content>\n  </mat-card>\n</section>\n"
 
 /***/ }),
 
@@ -833,7 +1155,7 @@ module.exports = "<section *ngIf=\"remedy\">\n  <mat-card class=\"example-card\"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".example-card {\n  max-width: 65%; }\n\n.example-header-image {\n  background-image: url(\"https://material.angular.io/assets/img/examples/shiba1.jpg\");\n  background-size: cover; }\n\nsection {\n  display: flex;\n  justify-content: center;\n  margin: 5%; }\n\nsection .mat-h1 {\n    margin: 0 20%; }\n\nsection mat-icon {\n    color: gray; }\n"
+module.exports = ".example-card {\n  max-width: 65%;\n  width: 814px;\n  height: 100%; }\n\n.example-header-image {\n  background-image: url(\"https://material.angular.io/assets/img/examples/shiba1.jpg\");\n  background-size: cover; }\n\nsection {\n  display: flex;\n  justify-content: center;\n  margin: 5%;\n  padding-bottom: 2%;\n  padding-top: 3%;\n  height: 80vh; }\n\nsection .mat-h1 {\n    margin: 0 20%; }\n\nsection mat-icon {\n    color: gray; }\n\nmat-card-actions.mat-card-actions.ng-star-inserted {\n  text-align: center;\n  left: 33.33%;\n  right: 33.33%; }\n\n.commentsList li {\n  list-style: none; }\n\n.commentsList li p {\n    margin-bottom: 0; }\n"
 
 /***/ }),
 
@@ -853,6 +1175,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
 /* harmony import */ var _comment_comment_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../comment/comment.component */ "./src/app/comment/comment.component.ts");
 /* harmony import */ var _services_auth_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../services/auth.service */ "./src/app/services/auth.service.ts");
+/* harmony import */ var _new_remedy_new_remedy_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../new-remedy/new-remedy.component */ "./src/app/new-remedy/new-remedy.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -868,8 +1191,8 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
+
 var RemedyDetailComponent = /** @class */ (function () {
-    /* comments = []; */
     function RemedyDetailComponent(router, route, authService, remedyService, bottomSheet) {
         var _this = this;
         this.router = router;
@@ -877,11 +1200,12 @@ var RemedyDetailComponent = /** @class */ (function () {
         this.authService = authService;
         this.remedyService = remedyService;
         this.bottomSheet = bottomSheet;
+        this.remedy = {};
         this.fav = false;
+        this.arrayComments = [];
         this.route.params.subscribe(function (params) {
             var idRemedy = _this.route.snapshot.params['id'];
             _this.remedyService.getOneRemedy(idRemedy).subscribe(function (oneRemedy) {
-                console.log(oneRemedy);
                 _this.remedy = oneRemedy;
             });
         });
@@ -893,16 +1217,31 @@ var RemedyDetailComponent = /** @class */ (function () {
     RemedyDetailComponent.prototype.ngOnInit = function () {
     };
     RemedyDetailComponent.prototype.openBottomSheet = function () {
-        var sheet = this.bottomSheet.open(_comment_comment_component__WEBPACK_IMPORTED_MODULE_4__["CommentComponent"]);
+        var _this = this;
+        var sheet = this.bottomSheet.open(_comment_comment_component__WEBPACK_IMPORTED_MODULE_4__["CommentComponent"], {
+            data: this.remedy
+        });
         sheet.backdropClick().subscribe(function () {
             console.log('dbclicked');
         });
         sheet.afterDismissed().subscribe(function (comment) {
-            console.log(comment);
+            if (_this.remedy.comments.length === 0) {
+                _this.arrayComments.push(comment);
+            }
+            _this.remedy.comments.push(comment);
         });
     };
     RemedyDetailComponent.prototype.show = function () {
         return this.authService.show();
+    };
+    RemedyDetailComponent.prototype.openEdit = function () {
+        var sheet = this.bottomSheet.open(_new_remedy_new_remedy_component__WEBPACK_IMPORTED_MODULE_6__["NewRemedyComponent"], {
+            data: this.remedy
+        });
+        sheet.backdropClick().subscribe(function () {
+            console.log('dbclicked');
+        });
+        sheet.afterDismissed();
     };
     RemedyDetailComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -949,10 +1288,10 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 var AuthService = /** @class */ (function () {
+    /*  url = '/api/'; */
     function AuthService(http) {
         this.http = http;
-        // url = 'http://localhost:3000/api/';
-        this.url = '/api/';
+        this.url = 'http://localhost:3000/api/';
     }
     AuthService.prototype.signup = function (auth) {
         return this.http.post(this.url + 'signup', auth)
@@ -983,6 +1322,59 @@ var AuthService = /** @class */ (function () {
         __metadata("design:paramtypes", [_angular_http__WEBPACK_IMPORTED_MODULE_1__["Http"]])
     ], AuthService);
     return AuthService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/services/comments.service.ts":
+/*!**********************************************!*\
+  !*** ./src/app/services/comments.service.ts ***!
+  \**********************************************/
+/*! exports provided: CommentsService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CommentsService", function() { return CommentsService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/http */ "./node_modules/@angular/http/fesm5/http.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var CommentsService = /** @class */ (function () {
+    /*   url = '/api/comments/'; */
+    function CommentsService(http) {
+        this.http = http;
+        this.url = 'http://localhost:3000/api/comments/';
+    }
+    // get all
+    CommentsService.prototype.getAllComments = function () {
+        return this.http.get(this.url).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (res) { return res.json(); }));
+    };
+    // create one
+    CommentsService.prototype.createComment = function (obj) {
+        return this.http.post(this.url, obj)
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (res) { return res.json(); }));
+    };
+    CommentsService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
+            providedIn: 'root'
+        }),
+        __metadata("design:paramtypes", [_angular_http__WEBPACK_IMPORTED_MODULE_1__["Http"]])
+    ], CommentsService);
+    return CommentsService;
 }());
 
 
@@ -1098,10 +1490,10 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 var NewRemedyService = /** @class */ (function () {
+    /*  url = '/api/remedies/'; */
     function NewRemedyService(http) {
         this.http = http;
-        //  url = 'http://localhost:3000/api/remedies/';
-        this.url = '/api/remedies/';
+        this.url = 'http://localhost:3000/api/remedies/';
     }
     // get all remedies
     NewRemedyService.prototype.getAllRemedies = function () {
